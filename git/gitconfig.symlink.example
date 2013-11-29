@@ -1,6 +1,6 @@
 [user]
-	name = Dariusz Stefanski
-	email = MY_EMAIL
+	name = NAME
+	email = EMAIL
 [core]
 	editor = vim
 [alias]
