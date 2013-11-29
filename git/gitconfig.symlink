@@ -1,0 +1,29 @@
+[user]
+	name = Dariusz Stefanski
+	email = MY_EMAIL
+[core]
+	editor = vim
+[alias]
+        co = checkout
+        ci = commit
+        st = status
+        di = diff HEAD
+        lgf = log --follow
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative 
+        lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --since='1 day'
+[i18n]
+        commitEncoding = UTF-8
+        logOutputEncoding = UTF-8
+[apply]
+        whitespace = strip
+[diff]
+        color = true
+        rename = copy
+[pager]
+        color = true
+[status]
+        color = true
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = 1
