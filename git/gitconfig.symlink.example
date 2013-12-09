@@ -11,6 +11,7 @@
         lgf = log --follow
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative 
         lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --since='1 day'
+        contains-commit = branch --contains
 [i18n]
         commitEncoding = UTF-8
         logOutputEncoding = UTF-8
