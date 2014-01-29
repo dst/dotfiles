@@ -1,0 +1,38 @@
+# My
+
+export EDITOR=vim
+export PATH=~/bin:$PATH
+export PATH=~/programs/sbt/bin:$PATH
+
+# Android
+export ANDROID_HOME=~/programs/android-sdk-linux
+export PATH=~/programs/android-sdk-linux/tools:~/programs/android-sdk-linux/platform-tools:$PATH
+export PATH=~/programs/android-studio/bin:$PATH
+
+# Gradle
+export PATH=~/programs/gradle/bin:$PATH
+
+# Intellij IDEA
+export PATH=~/programs/idea-IC-133.331/bin:$PATH
+
+# Mozilla
+export MOZILLA_FIVE_HOME=/usr/lib/mozilla
+
+
+# Multi files configuration for ssh
+prepare_ssh_config() {
+  # $HOME and ~ are not available here
+  SSH_CONF='/home/dst/.ssh/config'
+
+  SSH_CONF_HEADER="
+######################
+### DO NOT EDIT!!! ###
+######################
+#
+# See ~/.ssh/configs
+
+" 
+  echo "$SSH_CONF_HEADER"  > $SSH_CONF
+  cat ~/.ssh/configs/* >> $SSH_CONF
+}
+prepare_ssh_config
