@@ -1,6 +1,12 @@
 # My
 
+# Make vim the default editor
 export EDITOR=vim
+
+# Larger bash history (2^16)
+export HISTSIZE=65536
+export HISTFILESIZE=$HISTSIZE
+
 export PATH=~/bin:$PATH
 export PATH=~/programs/sbt/bin:$PATH
 
@@ -18,6 +24,8 @@ export PATH=~/programs/idea-IC-133.331/bin:$PATH
 # Mozilla
 export MOZILLA_FIVE_HOME=/usr/lib/mozilla
 
+# Sublime Text 2
+export PATH=~/programs/SublimeText2:$PATH
 
 # Multi files configuration for ssh
 prepare_ssh_config() {
