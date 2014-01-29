@@ -3,9 +3,15 @@
 # Dariusz Stefanski
 # 28.11.2013
 
-DOTFILES_ROOT=`pwd`
+REPO_ROOT=`pwd`
 GITCONFIG="git/gitconfig.symlink"
 GITCONFIG_EXAMPLE="git/gitconfig.symlink.example"
+
+createBackupDir() {
+  backupDir=`pwd`/backup
+  mkdir $backupDir
+  echo "Created backup dir in: $backupDir"
+}
 
 setupGitconfig() {
   if [ ! -f $GITCONFIG ]
@@ -27,25 +33,26 @@ setupGitconfig() {
 addLink() {
   target=$1
   name=$2
+
+  if [ -f $name ]
+    then
+      echo "File $name exists. Backuping..."
+      mv $name $backupDir
+    fi
+
   ln -s $target $name
-  echo "$name -> $target" 
+  echo "$name -> $target"
 }
 
 installDotfiles() {
-  mkdir backup
-  for f in `find $DOTFILES_ROOT -name *.symlink`
+  for f in `find $REPO_ROOT -name *.symlink`
   do
     name=`basename ${f%.*}`
     dest="$HOME/.$name"
-    if [ -f $dest ]
-    then
-      echo "File $dest exists. Backuping..."
-      mv $dest backup
-    fi
-
     addLink $f $dest
   done
 }
 
+createBackupDir
 setupGitconfig
 installDotfiles
