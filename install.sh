@@ -44,7 +44,8 @@ addLink() {
   echo "$name -> $target"
 }
 
-installDotfiles() {
+installHomeDotfiles() {
+  echo "Installing home dotfiles"
   for f in `find $REPO_ROOT -name *.symlink`
   do
     name=`basename ${f%.*}`
@@ -53,6 +54,12 @@ installDotfiles() {
   done
 }
 
+installBin() {
+  echo "Installing bin folder"
+  ln -s $REPO_ROOT/bin ~/bin/my
+}
+
 createBackupDir
 setupGitconfig
-installDotfiles
+installHomeDotfiles
+installBin

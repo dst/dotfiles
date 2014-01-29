@@ -7,8 +7,7 @@ export EDITOR=vim
 export HISTSIZE=65536
 export HISTFILESIZE=$HISTSIZE
 
-export PATH=~/bin:$PATH
-export PATH=~/programs/sbt/bin:$PATH
+export PATH=~/bin/my:$PATH
 
 # Android
 export ANDROID_HOME=~/programs/android-sdk-linux
@@ -19,13 +18,17 @@ export PATH=~/programs/android-studio/bin:$PATH
 export PATH=~/programs/gradle/bin:$PATH
 
 # Intellij IDEA
-export PATH=~/programs/idea-IC-133.331/bin:$PATH
+export PATH=~/programs/idea-IC/bin:$PATH
 
 # Mozilla
 export MOZILLA_FIVE_HOME=/usr/lib/mozilla
 
+# sbt
+export PATH=~/programs/sbt/bin:$PATH
+
 # Sublime Text 2
 export PATH=~/programs/SublimeText2:$PATH
+
 
 # Multi files configuration for ssh
 prepare_ssh_config() {

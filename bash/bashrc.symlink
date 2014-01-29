@@ -110,4 +110,7 @@ fi
 # MY STUFF #
 
 # Other .bashrc files:
-. ~/.bashrc-*
+for f in ~/.bashrc-*
+do
+    . $f
+done
