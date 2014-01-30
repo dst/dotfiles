@@ -1,0 +1,20 @@
+# Dariusz Stefanski
+# 30.01.2014
+
+function startProgram {
+    program=$1
+    shift
+    args="$@"
+
+    echo "Starting program: $program $args"
+    $program $args > /dev/null 2>&1 &
+}
+
+function startPrograms {
+    programs="$@"
+
+    for program in $programs
+    do
+        startProgram $program
+    done
+}

@@ -3,31 +3,32 @@
 # Opens usefull programs
 # Dariusz Stefanski
 
+. ~/.bash-functions
+
 index=0
 function addFile {
-  file=$1
-  files[$index]=$1
-  index=`expr $index + 1` 
+    file=$1
+    files[$index]=$1
+    index=`expr $index + 1`
 }
 
 function openFiles {
-  kate ${files[@]} &
+    if [ ${#files[@]} -gt 0 ]
+    then
+        # There are some files to open
+        startProgram kate ${files[@]}
+    fi
 }
 
-thunderbird &
-skype &
-empathy &
-firefox &
-liferea &
-zim &
-terminator &
+echo "Starting programs"
+
+startPrograms thunderbird skype empathy firefox liferea zim
 
 #addFile some_path/przydatne.txt
 openFiles
 
 # my applications:
-birthday &
-promo-finder &
+startPrograms birthday promo-finder
 
 # work
 start-work.sh
