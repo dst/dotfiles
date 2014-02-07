@@ -3,11 +3,20 @@
 # Make vim the default editor
 export EDITOR=vim
 
+# Set prompt (branch name for git repos)
+# black-white
+#export PS1='${debian_chroot:+($debian_chroot)}\u@\h \t:\w$(__git_ps1 " (%s) ")\$ '
+# color
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h \t\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s) ")\$ '
+
 # Larger bash history (2^16)
 export HISTSIZE=65536
 export HISTFILESIZE=$HISTSIZE
 
 export PATH=~/bin/my:$PATH
+
+#export MAVEN_OPTS="-Xmx1024M -XX:MaxPermSize=1024m"
+
 
 # Android
 export ANDROID_HOME=~/programs/android-sdk-linux
@@ -17,23 +26,31 @@ export PATH=~/programs/android-studio/bin:$PATH
 # Gradle
 export PATH=~/programs/gradle/bin:$PATH
 
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # Intellij IDEA
 export PATH=~/programs/idea-IC/bin:$PATH
+
+# Mongo
+export PATH=~/programs/mongodb-linux-i686-2.2.3/bin:$PATH
 
 # Mozilla
 export MOZILLA_FIVE_HOME=/usr/lib/mozilla
 
-# sbt
+# Scala
 export PATH=~/programs/sbt/bin:$PATH
 
 # Sublime Text 2
 export PATH=~/programs/SublimeText2:$PATH
 
+# Tor
+export PATH=~/programs/tor-browser:$PATH
+
 
 # Multi files configuration for ssh
 prepare_ssh_config() {
-  # $HOME and ~ are not available here
-  SSH_CONF='/home/dst/.ssh/config'
+  SSH_CONF="$HOME/.ssh/config"
 
   SSH_CONF_HEADER="
 ######################
