@@ -18,3 +18,15 @@ function startPrograms {
         startProgram $program
     done
 }
+
+
+function pullGitRepo {
+    repo=$1
+
+    cd $repo
+    echo "Pulling git repo $repo"
+    git pull
+
+    # Go back
+    cd -
+}

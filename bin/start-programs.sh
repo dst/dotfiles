@@ -30,5 +30,8 @@ openFiles
 # my applications:
 startPrograms birthday promo-finder
 
+pullGitRepo ~/myprojects/dotfiles
+pullGitRepo ~/myprojects/config-private
+
 # work
 start-work.sh
