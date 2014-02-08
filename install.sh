@@ -3,15 +3,12 @@
 # Dariusz Stefanski
 # 28.11.2013
 
+. bash/bash-functions.symlink
+
 REPO_ROOT=`pwd`
 GITCONFIG="git/gitconfig.symlink"
 GITCONFIG_EXAMPLE="git/gitconfig.symlink.example"
 
-createBackupDir() {
-  backupDir=`pwd`/backup
-  mkdir $backupDir
-  echo "Created backup dir in: $backupDir"
-}
 
 setupGitconfig() {
   if [ ! -f $GITCONFIG ]
@@ -30,36 +27,8 @@ setupGitconfig() {
   fi
 }
 
-addLink() {
-  target=$1
-  name=$2
-
-  if [ -f $name ]
-    then
-      echo "File $name exists. Backuping..."
-      mv $name $backupDir
-    fi
-
-  ln -s $target $name
-  echo "$name -> $target"
-}
-
-installHomeDotfiles() {
-  echo "Installing home dotfiles"
-  for f in `find $REPO_ROOT -name *.symlink`
-  do
-    name=`basename ${f%.*}`
-    dest="$HOME/.$name"
-    addLink $f $dest
-  done
-}
-
-installBin() {
-  echo "Installing bin folder"
-  ln -s $REPO_ROOT/bin ~/bin/my
-}
 
 createBackupDir
 setupGitconfig
-installHomeDotfiles
-installBin
+installHomeDotfiles $REPO_ROOT
+installBin $REPO_ROOT/bin
