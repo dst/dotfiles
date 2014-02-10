@@ -4,6 +4,7 @@
 # Dariusz Stefanski
 
 . ~/.bash-functions
+. ~/.bash-paths
 
 index=0
 function addFile {
@@ -23,6 +24,7 @@ function openFiles {
 echo "Starting programs"
 
 startPrograms thunderbird skype empathy firefox liferea zim
+startProgram zim $ZIM_NOTES
 
 #addFile some_path/przydatne.txt
 openFiles
@@ -30,8 +32,8 @@ openFiles
 # my applications:
 startPrograms birthday promo-finder
 
-pullGitRepo ~/myprojects/dotfiles
-pullGitRepo ~/myprojects/config-private
+pullGitRepo $DOTFILES_PATH
+pullGitRepo $DOTFILES_PRIV_PATH
 
 # work
 start-work.sh

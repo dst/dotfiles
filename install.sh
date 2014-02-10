@@ -31,4 +31,4 @@ setupGitconfig() {
 createBackupDir
 setupGitconfig
 installHomeDotfiles $REPO_ROOT
-installBin $REPO_ROOT/bin
+installBin $REPO_ROOT/bin my

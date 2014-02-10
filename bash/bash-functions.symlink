@@ -1,3 +1,5 @@
+# Some useful bash functions.
+#
 # Dariusz Stefanski
 # 30.01.2014
 
@@ -54,21 +56,21 @@ function createBackupDir() {
 
 function addLink() {
     target=$1
-    name=$2
+    linkName=$2
 
-    if [ -e $name ]
+    if [ -e $linkName ]
     then
         if [ ! -d $BACKUP_DIR ]
         then
             createBackupDir
         fi
 
-        echo "File/directory $name exists. Backuping to $BACKUP_DIR"
-        mv $name $BACKUP_DIR
+        echo "File/directory $linkName exists. Backuping to $BACKUP_DIR"
+        mv $linkName $BACKUP_DIR
     fi
 
-    ln -s $target $name
-    echo "$name -> $target"
+    ln -s $target $linkName
+    echo "$linkName -> $target"
 }
 
 
@@ -88,9 +90,10 @@ function installSshConfigs() {
 
 installBin() {
     binDir=$1
+    linkName=$2
 
     echo "Installing bin folder"
-    addLink $binDir ~/bin/7bulls
+    addLink $binDir ~/bin/$linkName
 }
 
 
