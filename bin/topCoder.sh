@@ -1,0 +1,1 @@
+javaws ~/programs/topCoder.jnlp
