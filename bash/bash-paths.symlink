@@ -5,4 +5,4 @@
 
 DOTFILES_PATH="$HOME/myprojects/dotfiles"
 DOTFILES_PRIV_PATH="$HOME/myprojects/config-private"
-ZIM_NOTES="$HOME/myprojects/zim-notes"
+IT_ZIM_NOTES="$HOME/myprojects/it-zim-notes"
