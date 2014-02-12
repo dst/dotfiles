@@ -23,7 +23,7 @@ function openFiles {
 
 echo "Starting programs"
 
-startPrograms thunderbird skype empathy firefox liferea zim
+startPrograms thunderbird skype empathy firefox liferea
 startProgram zim $IT_ZIM_NOTES
 
 #addFile some_path/przydatne.txt

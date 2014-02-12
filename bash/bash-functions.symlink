@@ -20,7 +20,15 @@ function startProgram {
     shift
     args="$@"
 
-    echo "Starting program: $program $args"
+    # Don't start program if it is already started
+    started=`pgrep $program`
+    if [ -n "$started" ]
+    then
+      echo "$program is already running"
+      return
+    fi
+
+    echo "Starting program $program $args"
     $program $args > /dev/null 2>&1 &
 }
 
