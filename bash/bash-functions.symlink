@@ -24,11 +24,11 @@ function startProgram {
     started=`pgrep $program`
     if [ -n "$started" ]
     then
-      echo "$program is already running"
+      info "$program is already running"
       return
     fi
 
-    echo "Starting program $program $args"
+    info "Starting program $program $args"
     $program $args > /dev/null 2>&1 &
 }
 
@@ -36,6 +36,7 @@ function startProgram {
 function startPrograms {
     programs="$@"
 
+    info "Starting programs"
     for program in $programs
     do
         startProgram $program
@@ -47,7 +48,7 @@ function pullGitRepo {
     repo=$1
 
     cd $repo
-    echo "Pulling git repo $repo"
+    info "Pulling git repo $repo"
     git pull
 
     # Go back
@@ -58,7 +59,7 @@ function pullGitRepo {
 function createBackupDir() {
     export BACKUP_DIR=`pwd`/backup
     mkdir $BACKUP_DIR
-    echo "Created backup dir in: $BACKUP_DIR"
+    info "Created backup dir in: $BACKUP_DIR"
 }
 
 
@@ -73,19 +74,19 @@ function addLink() {
             createBackupDir
         fi
 
-        echo "File/directory $linkName exists. Backuping to $BACKUP_DIR"
+        info "File/directory $linkName exists. Backuping to $BACKUP_DIR"
         mv $linkName $BACKUP_DIR
     fi
 
     ln -s $target $linkName
-    echo "$linkName -> $target"
+    info "$linkName -> $target"
 }
 
 
 function installSshConfigs() {
     configsDir=$1
 
-    echo "Installing ssh configs"
+    info "Installing ssh configs"
     mkdir ~/.ssh/configs
     for f in `find $configsDir -type f`
     do
@@ -100,7 +101,7 @@ installBin() {
     binDir=$1
     linkName=$2
 
-    echo "Installing bin folder"
+    info "Installing bin folder"
     addLink $binDir ~/bin/$linkName
 }
 
@@ -108,7 +109,7 @@ installBin() {
 installHomeDotfiles() {
     symlinksDir=$1
 
-    echo "Installing home dotfiles"
+    info "Installing home dotfiles"
     for f in `find $symlinksDir -name *.symlink`
     do
         name=`basename ${f%.*}`
