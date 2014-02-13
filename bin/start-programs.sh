@@ -21,7 +21,10 @@ function openFiles {
     fi
 }
 
-echo "Starting programs"
+
+pullGitRepo $DOTFILES_PATH
+pullGitRepo $DOTFILES_PRIV_PATH
+pullGitRepo $IT_ZIM_NOTES
 
 startPrograms thunderbird skype empathy firefox liferea
 startProgram zim $IT_ZIM_NOTES
@@ -31,9 +34,6 @@ openFiles
 
 # my applications:
 startPrograms birthday promo-finder
-
-pullGitRepo $DOTFILES_PATH
-pullGitRepo $DOTFILES_PRIV_PATH
 
 # work
 start-work.sh
