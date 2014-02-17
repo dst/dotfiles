@@ -17,8 +17,6 @@ function error {
 
 function startProgram {
     program=$1
-    shift
-    args="$@"
 
     # Don't start program if it is already started
     started=`pgrep $program`
@@ -27,6 +25,14 @@ function startProgram {
       info "$program is already running"
       return
     fi
+
+    startProgramForce $@
+}
+
+function startProgramForce {
+    program=$1
+    shift
+    args="$@"
 
     info "Starting program $program $args"
     $program $args > /dev/null 2>&1 &
