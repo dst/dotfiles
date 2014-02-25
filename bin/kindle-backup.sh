@@ -5,4 +5,4 @@
 # Backup kindle files
 
 echo "Syncing Kindle"
-time rsync -av /media/Kindle/ ~/backup/kindle_backup
+time rsync -avh /media/$USER/Kindle/ ~/backup/kindle_backup
