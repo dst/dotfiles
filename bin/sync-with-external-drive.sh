@@ -4,6 +4,8 @@
 # 15.03.2012
 # Syncs local disk with external drive
 
+# TODO: use stderr and stdout files as before
+
 EX_DRIVE="/media/$USER/Expansion Drive"
 EXCLUDE=".cache"
 LOG_FILE="rsync.log"
