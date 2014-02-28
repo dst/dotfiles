@@ -10,8 +10,8 @@ URL_PREFIX="http://libsyn.com/media/eslpod/EC"
 
 if [ $# -ne 2 ]
 then
-  echo "Usage: $0 from to"
-  exit
+	echo "Usage: $0 from to"
+	exit
 fi
 from=$1
 to=$2
