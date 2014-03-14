@@ -10,11 +10,18 @@
 
 if [ $# -ne 2 ]
 then
-  echo "Usage: $0 server destDir"
-  exit 1
+	echo "Usage: $0 server destDir"
+	exit 1
 fi
 server=$1
 destDir=$2
+
+if [[ "$destDir" != /* ]]; then
+	# Relative path
+	destDir=`pwd`/$destDir
+fi
+
+info "Destination directory is $destDir"
 
 cd $IMAP_DIR
 for dir in `ls | grep -v msf`
@@ -24,6 +31,6 @@ do
 	src="$dir/$FILTER_FILE"
 	dst="$destDir/${email}_$FILTER_FILE"
 
-	echo "Coping $email filters"
+	info "Coping $email filters"
 	scp $src $server:$dst
 done
