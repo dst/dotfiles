@@ -29,7 +29,7 @@ export PATH=~/programs/e-Deklaracje/bin:$PATH
 export PATH=~/programs/gradle/bin:$PATH
 
 # Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=/usr/local/heroku/bin:$PATH
 
 # Intellij IDEA
 export PATH=~/programs/idea-IC/bin:$PATH
