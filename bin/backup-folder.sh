@@ -25,6 +25,5 @@ timestamp=`date +"%Y.%m.%d-%H.%I"`
 archiveName="$dirName-${timestamp}.zip"
 archivePath="/tmp/$archiveName"
 
-cd /tmp
 zip -r $archivePath $dirPath
 scp "$archivePath" $server:~/
