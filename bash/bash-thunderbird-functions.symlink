@@ -49,6 +49,17 @@ function getImapPathForEmail {
     echo $email
 }
 
+function emailExists {
+    email=$1
+
+    exists=`grep -c $email $PREFS_FILE`
+    if [ $exists -eq 0 ]; then
+        echo false
+    else
+        echo true
+    fi
+}
+
 # filterPath: something like /fullPath/user@example.com_msgFilterRules.dat
 function installThunderbirdFilter {
     filterPath=$1
@@ -56,8 +67,12 @@ function installThunderbirdFilter {
     info "Installing filters from $filterPath"
 
     email=`basename $filterPath | cut -d_ -f1`
-    dst=`getImapPathForEmail $email`/$FILTER_FILE
+    if [ `emailExists $email` = false ]; then
+        error "No $email in Thunderbird"
+        return
+    fi
 
+    dst=`getImapPathForEmail $email`/$FILTER_FILE
     addLink $filterPath $dst
 }
 
