@@ -60,13 +60,14 @@ function emailExists {
     fi
 }
 
-# filterPath: something like /fullPath/user@example.com_msgFilterRules.dat
+# filterDir: something like /fullPath/user@example.com
+# There is msgFilterRules.dat file in this directory
 function installThunderbirdFilter {
-    filterPath=$1
-
+    filterDir=$1
+    filterPath="$filterDir/$FILTER_FILE"
     info "Installing filters from $filterPath"
 
-    email=`basename $filterPath | cut -d_ -f1`
+    email=`basename $filterDir`
     if [ `emailExists $email` = false ]; then
         error "No $email in Thunderbird"
         return
@@ -78,8 +79,9 @@ function installThunderbirdFilter {
 
 function installThunderbirdFilters {
     path=$1
+    info "Installing filters from $path"
 
-    for f in $path/*; do
-        installThunderbirdFilter $f
+    for d in $path/*; do
+        installThunderbirdFilter $d
     done
 }

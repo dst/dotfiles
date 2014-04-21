@@ -12,5 +12,4 @@ $ ./install.sh
 - start-programs.sh -> other_name.sh
 
 ## Bugs
-- Thunderbird don't write filters to created symlinks during installtion
 - Problem with setting HISTSIZE: bash_history is small
