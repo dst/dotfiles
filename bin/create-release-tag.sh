@@ -14,12 +14,6 @@ fi
 sha=$1
 version=$2
 
-activeBranch=`git rev-parse --abbrev-ref HEAD`
-git checkout $sha
-git tag "RELEASE_$version"
+git tag "RELEASE_$version" $sha
 git push --tags
-
-# Go back to the active branch
-cd $CURRENT_DIR
-git checkout $activeBranch
 
