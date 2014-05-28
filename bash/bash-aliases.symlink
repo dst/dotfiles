@@ -5,4 +5,6 @@
 
 . ~/.bash-paths
 
+alias idea-ic="~/programs/idea-IC/bin/idea.sh"
+alias idea-iu-12="~/programs/idea-IU-12/bin/idea.sh"
 alias zim-it="zim $IT_ZIM_NOTES"

@@ -33,9 +33,6 @@ export PATH=~/programs/gradle/bin:$PATH
 # Heroku Toolbelt
 export PATH=/usr/local/heroku/bin:$PATH
 
-# Intellij IDEA
-export PATH=~/programs/idea-IC/bin:$PATH
-
 # Mongo
 export PATH=~/programs/mongodb-linux-i686-2.2.3/bin:$PATH
 
