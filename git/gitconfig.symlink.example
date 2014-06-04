@@ -12,6 +12,7 @@
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative 
         lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --since='1 day'
         contains-commit = branch --contains
+        remove-untracked-files = clean -f -d
 [i18n]
         commitEncoding = UTF-8
         logOutputEncoding = UTF-8
