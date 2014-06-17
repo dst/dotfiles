@@ -1,5 +1,8 @@
 # My
 
+# Activate fish terminal
+fish
+
 # Make vim the default editor
 export EDITOR=vim
 
@@ -16,8 +19,6 @@ export HISTFILESIZE=$HISTSIZE
 export PATH=~/bin/my:$PATH
 
 . ~/.bash-aliases
-
-#export MAVEN_OPTS="-Xmx1024M -XX:MaxPermSize=1024m"
 
 # Android
 export ANDROID_HOME=~/programs/android-sdk-linux
