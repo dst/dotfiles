@@ -63,8 +63,8 @@ prepare_ssh_config() {
 ######################
 #
 # See ~/.ssh/configs
-
 " 
+
   echo "$SSH_CONF_HEADER"  > $SSH_CONF
   cat ~/.ssh/configs/* >> $SSH_CONF
 }
