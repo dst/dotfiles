@@ -1,8 +1,5 @@
 # My
 
-# Activate fish terminal
-fish
-
 # Make vim the default editor
 export EDITOR=vim
 
