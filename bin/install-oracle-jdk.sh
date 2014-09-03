@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 # Dariusz Stefanski
 # 03.09.2014
