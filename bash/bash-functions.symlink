@@ -108,7 +108,9 @@ installBin() {
     linkName=$2
 
     info "Installing bin folder"
-    addLink $binDir ~/bin/$linkName
+    dst=~/bin/$linkName
+    mkdir -p $dst
+    addLink $binDir $dst
 }
 
 
