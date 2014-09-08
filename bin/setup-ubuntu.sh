@@ -9,5 +9,11 @@ sudo apt-get update
 # Basic stuff
 sudo apt-get install vim xclip git curl zim terminator gitk meld tree gparted openssh-server tofrodos
 
+# Java 8
+install-oracle-jdk.sh 8
+
+# Groovy
+install-groovy.sh
+
 # To better run as guest on Virtual Box
 sudo apt-get install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
