@@ -14,4 +14,4 @@ version=$1
 sudo apt-get update
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java${version}-installer
+sudo apt-get install -y oracle-java${version}-installer
