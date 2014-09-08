@@ -7,5 +7,6 @@
 # GVM the Groovy enVironment Manager
 curl -s get.gvmtool.net | bash
 
+. ~/.gvm/bin/gvm-init.sh
 gvm install groovy
 
