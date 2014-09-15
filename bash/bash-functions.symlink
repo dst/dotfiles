@@ -94,7 +94,7 @@ function installSshConfigs() {
 
     info "Installing ssh configs"
     mkdir ~/.ssh/configs
-    for f in `find $configsDir -type f`
+    for f in $configsDir/*config
     do
         configName=`basename $f`
         dest="$HOME/.ssh/configs/$configName"
