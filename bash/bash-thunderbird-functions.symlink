@@ -81,6 +81,12 @@ function installThunderbirdFilters {
     path=$1
     info "Installing filters from $path"
 
+    if [ ! -d $path ]
+    then
+        info "Directory $path doesn't exist"
+        exit
+    fi
+
     for d in $path/*; do
         installThunderbirdFilter $d
     done
