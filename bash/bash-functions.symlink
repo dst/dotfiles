@@ -35,7 +35,7 @@ function startProgramForce {
     args="$@"
 
     info "Starting program $program $args"
-    $program $args > /dev/null 2>&1 &
+    $program $args > /dev/null &
 }
 
 
