@@ -4,10 +4,17 @@
 # Date	: 05.09.2014
 # It installs some basic programs which are useful in work
 
+function install {
+	sudo apt-get install -y $@
+}
+
 sudo apt-get update
 
 # Basic stuff
-sudo apt-get install -y vim xclip git curl zim terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3 systat
+install xclip git curl zim terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3 systat
+
+# Editors
+install vim kate kile
 
 # Java 8
 install-oracle-jdk.sh 8
