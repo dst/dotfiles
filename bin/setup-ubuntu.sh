@@ -11,16 +11,22 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip git curl zim terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3 systat
+install xclip git curl zim terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3
 
 # Editors
 install vim kate kile
+
+# Monitoring
+install systat htop
+
+# Package management
+install rpm alien
+
+# To better run as guest on Virtual Box
+install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
 
 # Java 8
 install-oracle-jdk.sh 8
 
 # Groovy
 install-groovy.sh
-
-# To better run as guest on Virtual Box
-sudo apt-get install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
