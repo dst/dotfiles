@@ -36,6 +36,11 @@ function startProgramForce {
 
     info "Starting program $program $args"
     $program $args > /dev/null 2>&1 &
+
+    exitCode=$?
+    if [ $exitCode -ne 0 ]; then
+        error "Program $program exited with code $exitCode"
+    fi
 }
 
 
