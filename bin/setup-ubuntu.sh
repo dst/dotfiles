@@ -11,10 +11,13 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip git curl zim terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3
+install xclip curl zim terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3
 
 # Editors
 install vim kate kile
+
+# Git stuff
+install git gitstats
 
 # Monitoring
 install systat htop
