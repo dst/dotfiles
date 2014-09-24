@@ -11,13 +11,13 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip curl zim terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3
+install xclip curl terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3
 
 # Editors
-install vim kate kile
+install zim vim kate kile
 
-# Git stuff
-install git gitstats
+# SCM stuff
+install git gitstats mercurial
 
 # Monitoring
 install systat htop
@@ -27,6 +27,9 @@ install rpm alien
 
 # To better run as guest on Virtual Box
 install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
+
+# Java stuff
+install maven
 
 # Java 8
 install-oracle-jdk.sh 8
