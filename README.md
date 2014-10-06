@@ -11,6 +11,7 @@ $ ./install.sh
 - start-programs.sh -> other_name.sh
 - create directory structure
 - install missing programs and packets
+- ExQuilla support for thunderbird functions
 
 ## Bugs
 - Problem with setting HISTSIZE: bash_history is small
