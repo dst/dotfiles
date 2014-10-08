@@ -23,14 +23,14 @@ fi
 
 info "Destination directory is $destDir"
 
-cd $IMAP_DIR
-for dir in `ls | grep -v msf`
+cd $PROFILE_DIR
+for filterFile in `find * -name $FILTER_FILE`
 do
+	dir=`dirname $filterFile`
 	path="`pwd`/$dir"
-	email=`getEmailForImapPath $path`
-	src="$dir/$FILTER_FILE"
+	email=`getEmailForPath $path`
 	dst="$destDir/${email}_$FILTER_FILE"
 
 	info "Coping $email filters"
-	scp $src $server:$dst
+	scp $filterFile $server:$dst
 done

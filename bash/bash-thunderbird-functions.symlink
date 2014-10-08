@@ -8,23 +8,25 @@
 # *default - profile directory, it can be also read from ~/.thunderbird profiles.ini file
 PROFILE_DIR=~/.thunderbird/*default
 PREFS_FILE="$PROFILE_DIR/prefs.js"
-IMAP_DIR="$PROFILE_DIR/ImapMail"
 
 # Filters are located in files similar to:
 # ~/.thunderbird./abcdef.default/ImapMail/imap.example.com/msgFilterRules.dat
+# ~/.thunderbird./abcdef.default/ExQuilla/mail.4finance.com/msgFilterRules.dat
 FILTER_FILE="msgFilterRules.dat"
 
 
-# path: something like ~/.thunderbird/abcdef.default/ImapMail/imap.example.com
-function getEmailForImapPath {
+# path is something like:
+# /home/user/.thunderbird/abcdef.default/ImapMail/imap.example.com
+# /home/user/.thunderbird/abcdef.default/ExQuilla/mail.example.com
+function getEmailForPath {
     path=$1
 
     # In PREFS_FILE we have inter alia something like:
     # user_pref("mail.server.serverN.directory", "path");
-    # user_pref("mail.server.serverN.name", "example@example.com");
+    # user_pref("mail.server.serverN.userName", "example@example.com");
 
     # Create something like user_pref("mail.server.serverN.name
-    serverNameLinePrefix=`grep $path $PREFS_FILE | cut -d, -f1 | sed "s/directory/name/"`
+    serverNameLinePrefix=`grep $path $PREFS_FILE | cut -d, -f1 | sed "s/directory/userName/"`
 
     # Extract email address:
     email=`grep "$serverNameLinePrefix" $PREFS_FILE | sed -n 's/.*"\(.*@.*\)".*/\1/p'`
@@ -33,15 +35,15 @@ function getEmailForImapPath {
 }
 
 
-function getImapPathForEmail {
+function getPathForEmail {
     email=$1
 
     # In PREFS_FILE we have inter alia something like:
     # user_pref("mail.server.serverN.directory", "path");
-    # user_pref("mail.server.serverN.name", "example@example.com");
+    # user_pref("mail.server.serverN.userName", "example@example.com");
 
     # Create something like user_pref("mail.server.serverN.directory
-    dirLinePrefix=`grep $email $PREFS_FILE | grep mail.server | cut -d, -f1 | sed "s/name/directory/"`
+    dirLinePrefix=`grep $email $PREFS_FILE | grep mail.server | cut -d, -f1 | sed "s/userName/directory/"`
 
     # Extract path:
     email=`grep "$dirLinePrefix" $PREFS_FILE | sed -n 's/.*"\(.*thunderbird.*\)".*/\1/p'`
@@ -73,7 +75,7 @@ function installThunderbirdFilter {
         return
     fi
 
-    dst=`getImapPathForEmail $email`/$FILTER_FILE
+    dst=`getPathForEmail $email`/$FILTER_FILE
     addLink $filterPath $dst
 }
 
