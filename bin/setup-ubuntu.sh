@@ -11,13 +11,16 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip curl terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3
+install xclip curl terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3 regexxer cloc
+
+# PDF stuff
+install okular xournal
 
 # Editors
 install zim vim kate kile
 
 # SCM stuff
-install git gitstats mercurial
+install git gitstats gource mercurial
 
 # Monitoring
 install systat htop
