@@ -19,6 +19,9 @@ install okular xournal
 # Editors
 install zim vim kate kile
 
+# Security
+install keepassx
+
 # SCM stuff
 install git gitstats gource mercurial
 
