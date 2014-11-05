@@ -37,6 +37,9 @@ export PATH=~/programs/gradle/bin:$PATH
 # Heroku Toolbelt
 export PATH=/usr/local/heroku/bin:$PATH
 
+# (Eclipse) Memory Analyzer (MAT)
+export PATH=~/programs/mat:$PATH
+
 # Mongo
 export PATH=~/programs/mongodb-linux-i686-2.2.3/bin:$PATH
 
