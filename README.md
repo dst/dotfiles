@@ -3,6 +3,9 @@
 
 ## Installation
 Run script:
+$ sudo apt-get install git
+$ git clone git@github.com:dst/dotfiles.git
+$ cd dotfiles
 $ ./install.sh
 
 ## TODO
