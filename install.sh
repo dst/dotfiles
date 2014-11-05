@@ -25,10 +25,15 @@ setupGitconfig() {
 
     echo ".gitconfig setup done"
   fi
-}
 
+setRebaseForDotfile() {
+  # autorebase is setup in .gitconfig, but dotfiles project was cloned before,
+  # so we need to fix it manually
+  git config branch.master.rebase true
+}
 
 createBackupDir
 setupGitconfig
+setRebaseForDotfile
 installHomeDotfiles $REPO_ROOT
 installBin $REPO_ROOT/bin my
