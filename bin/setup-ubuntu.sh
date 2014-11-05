@@ -32,10 +32,8 @@ install rpm alien
 install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
 
 # Java stuff
-install maven
-
-# Java 8
 install-oracle-jdk.sh 8
+install maven
 
 # Groovy
 install-groovy.sh
