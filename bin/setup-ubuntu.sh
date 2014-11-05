@@ -11,7 +11,10 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip curl terminator gitk meld tree gparted openssh-server tofrodos indicator-multiload mc fish pgadmin3 regexxer cloc
+install xclip curl meld tree gparted openssh-server tofrodos mc pgadmin3 regexxer cloc
+
+# Terminal
+install terminator fish
 
 # PDF stuff
 install okular xournal
@@ -23,10 +26,10 @@ install zim vim kate kile
 install keepassx
 
 # SCM stuff
-install git gitstats gource mercurial
+install git gitk gitstats gource mercurial
 
 # Monitoring
-install systat htop
+install sysstat htop indicator-multiload
 
 # Package management
 install rpm alien
@@ -40,3 +43,7 @@ install maven
 
 # Groovy
 install-groovy.sh
+
+echo
+echo "Please remember to:"
+echo "- Configure indicator-multiload"
