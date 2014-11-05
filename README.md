@@ -2,11 +2,10 @@
 
 
 ## Installation
-Run script:
-$ sudo apt-get install git
-$ git clone git@github.com:dst/dotfiles.git
-$ cd dotfiles
-$ ./install.sh
+- $ sudo apt-get install git
+- $ git clone git@github.com:dst/dotfiles.git
+- $ cd dotfiles
+- $ ./install.sh
 
 ## TODO
 - move addFile to functions and eliminate index
