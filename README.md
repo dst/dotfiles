@@ -2,7 +2,9 @@
 
 
 ## Installation
-$ bash -c "`curl -fsSL https://raw.github.com/dst/dotfiles/master/install.sh`"
+```bash
+$ bash -c "`curl -fsSL https://raw.github.com/dst/dotfiles/master/bootstrap.sh`"
+```
 
 ## TODO
 - move addFile to functions and eliminate index
