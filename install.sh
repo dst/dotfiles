@@ -13,10 +13,10 @@ GITCONFIG_EXAMPLE="git/gitconfig.symlink.example"
 setupGitconfig() {
   if [ ! -f $GITCONFIG ]
   then
-    echo "What is your github name?"
+    echo "What is your git name?"
     read name
 
-    echo "What is your github email?"
+    echo "What is your git email?"
     read email
 
     cp $GITCONFIG_EXAMPLE $GITCONFIG
