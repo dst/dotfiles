@@ -7,7 +7,7 @@
 
 REPO_PATH=~/myprojects/dotfiles
 
-mkdir -p REPO_PATH
+mkdir -p $REPO_PATH
 sudo apt-get install git
 git clone git@github.com:dst/dotfiles.git $REPO_PATH
 cd $REPO_PATH
