@@ -5,7 +5,7 @@
 # It installs some basic programs which are useful in work
 
 function install {
-	sudo apt-get install -y $@
+    sudo apt-get install -y $@
 }
 
 sudo apt-get update
@@ -13,7 +13,7 @@ sudo apt-get update
 # Basic stuff
 install xclip curl meld tree gparted openssh-server tofrodos mc pgadmin3 regexxer cloc
 
-# Terminal
+# Terminals
 install terminator fish
 
 # PDF stuff
