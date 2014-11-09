@@ -35,5 +35,3 @@ openFiles
 # my applications:
 startPrograms birthday promo-finder
 
-# work
-start-work.sh
