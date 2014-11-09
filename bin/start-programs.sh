@@ -5,6 +5,7 @@
 
 . ~/.bash-functions
 . ~/.bash-paths
+. ~/.bash-paths-priv
 
 index=0
 function addFile {
