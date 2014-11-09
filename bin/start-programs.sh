@@ -26,7 +26,7 @@ pullGitRepo $DOTFILES_PATH
 pullGitRepo $DOTFILES_PRIV_PATH
 pullGitRepo $IT_ZIM_NOTES
 
-startPrograms thunderbird skype pidgin firefox liferea keepassx
+startPrograms thunderbird skype pidgin firefox liferea
 startProgram zim $IT_ZIM_NOTES
 
 #addFile some_path/przydatne.txt
@@ -35,3 +35,4 @@ openFiles
 # my applications:
 startPrograms birthday promo-finder
 
+startProgram keepassx $KEEPASSX_DB_PATH
