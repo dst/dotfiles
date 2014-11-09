@@ -61,7 +61,7 @@ export PATH=~/programs/tor-browser:$PATH
 
 
 # Multi files configuration for ssh
-prepare_ssh_config() {
+ssh-config-update() {
   SSH_CONF="$HOME/.ssh/config"
 
   SSH_CONF_HEADER="
@@ -75,4 +75,4 @@ prepare_ssh_config() {
   echo "$SSH_CONF_HEADER"  > $SSH_CONF
   cat ~/.ssh/configs/* >> $SSH_CONF
 }
-prepare_ssh_config
+ssh-config-update
