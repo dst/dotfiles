@@ -37,6 +37,9 @@ install rpm alien
 # To better run as guest on Virtual Box
 install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
 
+# Sublime Text 2
+install-sublime-text2.sh
+
 # Java stuff
 install-oracle-jdk.sh 8
 install maven

@@ -8,4 +8,4 @@
 . ~/.bash-paths
 . ~/.bash-paths-work
 
-sublime_text $DOTFILES_PATH $DOTFILES_PRIV_PATH $DOTFILES_WORK_PATH
+sublime-text $DOTFILES_PATH $DOTFILES_PRIV_PATH $DOTFILES_WORK_PATH
