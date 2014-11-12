@@ -27,6 +27,7 @@ install keepassx
 
 # SCM stuff
 install git gitk gitstats gource mercurial
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
 
 # Monitoring
 install sysstat htop indicator-multiload
