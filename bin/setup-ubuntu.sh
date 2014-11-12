@@ -37,9 +37,6 @@ install nmap wireshark
 # Package management
 install rpm alien
 
-# To better run as guest on Virtual Box
-install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
-
 # Sublime Text 2
 install-sublime-text2.sh
 
