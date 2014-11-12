@@ -31,6 +31,9 @@ install git gitk gitstats gource mercurial
 # Monitoring
 install sysstat htop indicator-multiload
 
+# Networking
+install nmap wireshark
+
 # Package management
 install rpm alien
 
