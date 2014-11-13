@@ -14,7 +14,8 @@ sudo apt-get update
 install xclip curl meld tree gparted openssh-server tofrodos mc pgadmin3 regexxer cloc
 
 # Terminals
-install terminator fish
+install terminator
+install-fish.sh
 
 # PDF stuff
 install okular xournal
