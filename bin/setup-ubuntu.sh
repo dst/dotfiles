@@ -27,7 +27,7 @@ install zim vim kate kile
 install keepassx
 
 # SCM stuff
-install git gitk gitstats gource mercurial
+install git tig gitk gitstats gource mercurial
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
 
 # Monitoring
