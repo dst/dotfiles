@@ -11,7 +11,7 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip curl meld tree gparted openssh-server tofrodos mc pgadmin3 regexxer cloc
+install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox
 
 # Terminals
 install terminator
@@ -26,6 +26,9 @@ install zim vim kate kile
 # Security
 install keepassx
 
+# Database
+isntall pgadmin3
+
 # SCM stuff
 install git tig gitk gitstats gource mercurial
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
@@ -34,7 +37,7 @@ git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
 install sysstat htop indicator-multiload
 
 # Networking
-install nmap wireshark
+install curl nmap wireshark
 
 # Package management
 install rpm alien

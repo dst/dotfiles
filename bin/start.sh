@@ -22,17 +22,20 @@ function openFiles {
     fi
 }
 
+echo "Starting personal"
+
 pullGitRepo $DOTFILES_PATH
 pullGitRepo $DOTFILES_PRIV_PATH
 pullGitRepo $IT_ZIM_NOTES
 
 startPrograms thunderbird skype pidgin firefox google-chrome liferea
 startProgram zim $IT_ZIM_NOTES
-
-#addFile some_path/przydatne.txt
-openFiles
+startProgram keepassx $KEEPASSX_DB_PATH
 
 # my applications:
 startPrograms birthday promo-finder
 
-startProgram keepassx $KEEPASSX_DB_PATH
+#addFile some_path/przydatne.txt
+openFiles
+
+
