@@ -26,7 +26,7 @@ pullGitRepo $DOTFILES_PATH
 pullGitRepo $DOTFILES_PRIV_PATH
 pullGitRepo $IT_ZIM_NOTES
 
-startPrograms thunderbird skype pidgin firefox liferea
+startPrograms thunderbird skype pidgin firefox google-chrome liferea
 startProgram zim $IT_ZIM_NOTES
 
 #addFile some_path/przydatne.txt

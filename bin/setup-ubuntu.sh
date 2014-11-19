@@ -42,6 +42,9 @@ install rpm alien
 # Sublime Text 2
 install-sublime-text2.sh
 
+# Browsers
+install-google-chrome.sh
+
 # Java stuff
 install-oracle-jdk.sh 8
 install maven
