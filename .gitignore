@@ -1,3 +1,7 @@
 *~
 backup
 git/gitconfig.symlink
+
+# Fish
+fish_history
+fishd*

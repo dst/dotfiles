@@ -32,8 +32,13 @@ setRebaseForDotfiles() {
   git config branch.master.rebase true
 }
 
+installFish() {
+  addLink $REPO_ROOT/fish ~/.config/fish
+}
+
 createBackupDir
 setupGitconfig
 setRebaseForDotfiles
 installHomeDotfiles $REPO_ROOT
 installBin $REPO_ROOT/bin my
+installFish
