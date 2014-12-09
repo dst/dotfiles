@@ -28,7 +28,7 @@ pullGitRepo $DOTFILES_PATH
 pullGitRepo $DOTFILES_PRIV_PATH
 pullGitRepo $IT_ZIM_NOTES
 
-startPrograms thunderbird skype pidgin firefox google-chrome liferea
+startPrograms thunderbird skype pidgin firefox google-chrome spotify liferea
 startProgram zim $IT_ZIM_NOTES
 startProgram keepassx $KEEPASSX_DB_PATH
 

@@ -58,6 +58,9 @@ install-groovy.sh
 # Qt
 install qttools5-dev-tools
 
+# Relax
+install-spotify.py
+
 echo
 echo "Please remember to:"
 echo "- Configure indicator-multiload"
