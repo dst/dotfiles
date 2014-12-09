@@ -55,6 +55,9 @@ install maven
 # Groovy
 install-groovy.sh
 
+# Qt
+install qttools5-dev-tools
+
 echo
 echo "Please remember to:"
 echo "- Configure indicator-multiload"
