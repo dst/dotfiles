@@ -33,7 +33,7 @@ startProgram zim $IT_ZIM_NOTES
 startProgram keepassx $KEEPASSX_DB_PATH
 
 # my applications:
-startPrograms birthday promo-finder
+startPrograms dontforget promo-finder
 
 #addFile some_path/przydatne.txt
 openFiles
