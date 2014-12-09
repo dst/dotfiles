@@ -11,7 +11,7 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox
+install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule
 
 # Terminals
 install terminator
