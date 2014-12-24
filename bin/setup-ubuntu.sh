@@ -11,10 +11,10 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule
+install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule expect freemind
 
 # Terminals
-install terminator
+install terminator ledit
 install-fish.sh
 
 # PDF stuff
@@ -60,6 +60,8 @@ install qttools5-dev-tools
 
 # Relax
 install-spotify.py
+
+install-weather-indicator.sh
 
 echo
 echo "Please remember to:"
