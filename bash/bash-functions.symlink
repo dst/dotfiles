@@ -130,3 +130,15 @@ installHomeDotfiles() {
         addLink $f $dest
     done
 }
+
+installBashCompletions() {
+    completionsDir=$1
+
+    info "Installing bash completions from $completionsDir"
+    for f in $completionsDir/*
+    do
+        name=`basename $f`
+        dest="/usr/share/bash-completion/completions/$name"
+        addLink $f $dest
+    done
+}
