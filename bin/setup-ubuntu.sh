@@ -23,6 +23,9 @@ install okular xournal
 # Editors
 install zim vim kate kile
 
+# Graphics
+install gimp
+
 # Security
 install keepassx
 
