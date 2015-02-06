@@ -8,5 +8,6 @@
 alias idea-ic-13="~/programs/idea-IC-13/bin/idea.sh"
 alias idea-iu-12="~/programs/idea-IU-12/bin/idea.sh"
 alias idea-iu-13="~/programs/idea-IU-13/bin/idea.sh"
+alias idea-iu-14="~/programs/idea-IU-14/bin/idea.sh"
 alias scala-ide="~/programs/scala-ide/eclipse"
 alias zim-it="zim $IT_ZIM_NOTES"
