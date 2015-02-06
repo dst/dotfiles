@@ -34,13 +34,14 @@ isntall pgadmin3
 
 # SCM stuff
 install git tig gitk gitstats gource mercurial
+install-gdub.sh
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
 
 # Monitoring
-install sysstat htop indicator-multiload
+install sysstat htop indicator-multiload iotop
 
 # Networking
-install curl nmap wireshark
+install curl nmap wireshark nicstat
 
 # Package management
 install rpm alien
