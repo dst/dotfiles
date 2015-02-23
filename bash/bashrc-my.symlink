@@ -77,6 +77,6 @@ ssh-config-update() {
 " 
 
   echo "$SSH_CONF_HEADER"  > $SSH_CONF
-  cat ~/.ssh/configs/* >> $SSH_CONF
+  cat ~/.ssh/configs/*.config >> $SSH_CONF
 }
 ssh-config-update
