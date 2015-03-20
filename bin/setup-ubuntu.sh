@@ -11,7 +11,7 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule expect freemind
+install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule expect freemind virtualbox
 
 # Terminals
 install terminator ledit
@@ -45,6 +45,9 @@ install curl nmap wireshark nicstat
 
 # Package management
 install rpm alien
+
+# Work quality
+install pomodoro-indicator
 
 # Sublime Text 2
 install-sublime-text2.sh
