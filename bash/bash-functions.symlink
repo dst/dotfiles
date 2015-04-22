@@ -142,3 +142,7 @@ installBashCompletions() {
         addLink $f $dest
     done
 }
+
+function jsonformat() {
+    python -mjson.tool $argv
+}
