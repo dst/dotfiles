@@ -20,6 +20,9 @@ install-fish.sh
 # PDF stuff
 install okular xournal
 
+# Latex stuff
+install texlive-xetex texlive-latex-extra
+
 # Editors
 install zim vim kate kile
 
