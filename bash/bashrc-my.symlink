@@ -63,6 +63,7 @@ export PATH=~/programs/sbt/bin:$PATH
 # Tor
 export PATH=~/programs/tor-browser:$PATH
 
+. ~/.bash-functions
 
 # Multi files configuration for ssh
 ssh-config-update() {
