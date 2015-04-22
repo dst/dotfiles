@@ -68,6 +68,9 @@ install-groovy.sh
 # Qt
 install qttools5-dev-tools
 
+# Adobe
+install-adobeair.sh
+
 # Relax
 install-spotify.py
 
