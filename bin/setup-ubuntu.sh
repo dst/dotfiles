@@ -70,6 +70,7 @@ install qttools5-dev-tools
 
 # Adobe
 install-adobeair.sh
+install-adobe-reader.sh
 
 # Relax
 install-spotify.py
