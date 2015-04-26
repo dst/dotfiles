@@ -33,7 +33,7 @@ install gimp
 install keepassx
 
 # Database
-isntall pgadmin3
+install pgadmin3 sqlite
 
 # SCM stuff
 install git tig gitk gitstats gource mercurial
