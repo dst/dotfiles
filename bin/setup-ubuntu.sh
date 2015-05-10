@@ -23,6 +23,9 @@ install okular xournal
 # Latex stuff
 install texlive-xetex texlive-latex-extra
 
+# Compression
+install rar
+
 # Editors
 install zim vim kate kile
 
