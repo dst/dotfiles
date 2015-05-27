@@ -13,7 +13,10 @@ sudo apt-get update
 # Basic stuff
 install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule expect freemind
 
-# virtualisation
+# Automation
+install ansible
+
+# Virtualisation
 install vagrant virtualbox
 
 # Terminals
