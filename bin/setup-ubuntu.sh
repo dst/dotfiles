@@ -11,7 +11,10 @@ function install {
 sudo apt-get update
 
 # Basic stuff
-install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule expect freemind virtualbox
+install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule expect freemind
+
+# virtualisation
+install vagrant virtualbox
 
 # Terminals
 install terminator ledit
