@@ -37,5 +37,3 @@ startPrograms dontforget promo-finder
 
 #addFile some_path/przydatne.txt
 openFiles
-
-
