@@ -146,3 +146,7 @@ installBashCompletions() {
 function jsonformat() {
     python -mjson.tool $argv
 }
+
+function xmlformat() {
+   xmllint --format - $argv
+}
