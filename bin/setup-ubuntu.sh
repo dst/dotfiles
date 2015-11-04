@@ -10,27 +10,24 @@ function install {
 
 sudo apt-get update
 
-# Basic stuff
-install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc nautilus-dropbox gnome-schedule expect freemind
+# Adobe
+install-adobeair.sh
+install-adobe-reader.sh
 
 # Automation
 install ansible
 
-# Virtualisation
-install vagrant virtualbox
+# Basic stuff
+install xclip meld tree gparted openssh-server tofrodos mc regexxer cloc gnome-schedule expect freemind
 
-# Terminals
-install terminator ledit
-install-fish.sh
-
-# PDF stuff
-install okular xournal
-
-# Latex stuff
-install texlive-xetex texlive-latex-extra
+# Browsers
+install-google-chrome.sh
 
 # Compression
 install rar
+
+# Database
+install pgadmin3 sqlite
 
 # Editors
 install zim vim kate kile
@@ -38,16 +35,13 @@ install zim vim kate kile
 # Graphics
 install gimp
 
-# Security
-install keepassx
+# JVM
+install-groovy.sh
+install-oracle-jdk.sh 8
+install maven
 
-# Database
-install pgadmin3 sqlite
-
-# SCM stuff
-install git tig gitk gitstats gource mercurial
-install-gdub.sh
-git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
+# Latex stuff
+install texlive-xetex texlive-latex-extra
 
 # Monitoring
 install sysstat htop indicator-multiload iotop
@@ -58,37 +52,44 @@ install curl nmap wireshark nicstat
 # Package management
 install rpm alien
 
-# Work quality
-install pomodoro-indicator
+# Other
+install nautilus-dropbox
+install-weather-indicator.sh
 
-# Sublime Text 2
-install-sublime-text2.sh
-
-# Browsers
-install-google-chrome.sh
-
-# Java stuff
-install-oracle-jdk.sh 8
-install maven
-
-# Groovy
-install-groovy.sh
+# PDF stuff
+install okular xournal
 
 # Qt
 install qttools5-dev-tools
 
-# Adobe
-install-adobeair.sh
-install-adobe-reader.sh
-
 # Relax
 install-spotify.py
+
+# Security
+install keepassx
+
+# SCM
+install git tig gitk gitstats gource mercurial
+install-gdub.sh
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
+
+# Sublime Text 2
+install-sublime-text2.sh
+
+# Terminals
+install terminator ledit
+install-fish.sh
 
 # Tools
 # ab is in apache2-utils
 install apache2-utils
 
-install-weather-indicator.sh
+# Virtualisation
+install vagrant virtualbox
+
+# Work quality
+install pomodoro-indicator
+
 
 echo
 echo "Please remember to:"
