@@ -11,4 +11,6 @@ then
 fi
 name=$1
 
-for repo in `curl -s https://github.com/$name | grep codeRepository | cut -d'"' -f2`; do git clone git@github.com:${repo}.git; done
+for repo in `curl -s https://github.com/$name | grep codeRepository | cut -d'"' -f2`; do
+	git clone git@github.com:${repo}.git
+done
