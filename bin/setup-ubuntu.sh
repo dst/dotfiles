@@ -84,6 +84,10 @@ install-adobe-reader.sh
 # Relax
 install-spotify.py
 
+# Tools
+# ab is in apache2-utils
+install apache2-utils
+
 install-weather-indicator.sh
 
 echo
