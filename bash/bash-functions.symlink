@@ -148,5 +148,13 @@ function jsonformat() {
 }
 
 function xmlformat() {
-   xmllint --format -
+    xmllint --format -
+}
+
+function ctrlc() {
+    xclip -selection clipboard
+}
+
+function ctrlv() {
+    xclip -selection clipboard -o
 }
