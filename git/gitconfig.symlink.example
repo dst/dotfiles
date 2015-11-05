@@ -30,5 +30,4 @@
 	autosetuprebase = always
 [rerere]
 	enabled = 1
-[help]
-	autocorrect = 1
+
