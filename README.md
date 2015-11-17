@@ -7,7 +7,6 @@ $ bash -c "`curl -fsSL https://raw.github.com/dst/dotfiles/master/bootstrap.sh`"
 ```
 
 ## TODO
-- move addFile to functions and eliminate index
 - install related functions move from bash-functions to ?
 - create directory structure
 
