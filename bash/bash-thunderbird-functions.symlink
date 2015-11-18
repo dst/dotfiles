@@ -1,4 +1,4 @@
-# Some useful Thunderbird specific functions.
+# Useful Thunderbird specific functions.
 #
 # Dariusz Stefanski
 # 03.03.2014
@@ -33,7 +33,6 @@ function getEmailForPath {
 
     echo $email
 }
-
 
 function getPathForEmail {
     email=$1
