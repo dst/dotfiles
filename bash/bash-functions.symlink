@@ -8,12 +8,10 @@ function info {
     echo "INFO: $msg"
 }
 
-
 function error {
     msg=$1
     echo "ERROR: $msg"
 }
-
 
 function startProgram {
     program=$1
@@ -43,7 +41,6 @@ function startProgramForce {
     fi
 }
 
-
 function startPrograms {
     programs="$@"
 
@@ -53,7 +50,6 @@ function startPrograms {
         startProgram $program
     done
 }
-
 
 function pullGitRepo {
     repo=$1
@@ -66,13 +62,11 @@ function pullGitRepo {
     cd -
 }
 
-
 function createBackupDir() {
     export BACKUP_DIR=`pwd`/backup
     mkdir $BACKUP_DIR
     info "Created backup dir in: $BACKUP_DIR"
 }
-
 
 function addLink() {
     target=$1
@@ -93,7 +87,6 @@ function addLink() {
     info "$linkName -> $target"
 }
 
-
 function installSshConfigs() {
     configsDir=$1
 
@@ -107,7 +100,6 @@ function installSshConfigs() {
     done
 }
 
-
 installBin() {
     binDir=$1
     linkName=$2
@@ -117,7 +109,6 @@ installBin() {
     mkdir -p $dst
     addLink $binDir $dst
 }
-
 
 installHomeDotfiles() {
     symlinksDir=$1
