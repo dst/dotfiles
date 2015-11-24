@@ -37,9 +37,14 @@ installFish() {
   addLink $REPO_ROOT/fish ~/.config/fish
 }
 
+installGradle() {
+  addLink $REPO_ROOT/gradle/gradle.properties ~/.gradle/gradle.properties
+}
+
 createBackupDir
 setupGitconfig
 setRebaseForDotfiles
 installHomeDotfiles $REPO_ROOT
 installBin $REPO_ROOT/bin my
 installFish
+installGradle
