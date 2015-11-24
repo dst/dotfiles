@@ -25,6 +25,7 @@ setupGitconfig() {
 
     echo ".gitconfig setup done"
   fi
+}
 
 setRebaseForDotfiles() {
   # autorebase is setup in .gitconfig, but dotfiles project was cloned before,
