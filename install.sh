@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Installs dotfiles project.
+#
 # Dariusz Stefanski
 # 28.11.2013
 

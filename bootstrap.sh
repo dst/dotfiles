@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
+# Boostraps dotfiles project.
+#
 # Dariusz Stefanski
 # 05.11.2014
-#
-# Boostraps dotfiles project
 
 REPO_PATH=~/myprojects/dotfiles
 
