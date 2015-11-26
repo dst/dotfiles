@@ -47,7 +47,7 @@ install texlive-xetex texlive-latex-extra
 install sysstat htop indicator-multiload iotop
 
 # Networking
-install curl nmap wireshark nicstat
+install curl nmap wireshark nicstat socat
 
 # Package management
 install rpm alien
