@@ -9,7 +9,7 @@
 
 REPO_ROOT=`pwd`
 
-callInstallers() {
+callSubInstallers() {
   for d in `find . -mindepth 1 -type d `; do
     installer=$d/install.sh
     if [ -f $installer ]; then
@@ -23,4 +23,4 @@ info "Installing dotfiles"
 createBackupDir
 installHomeDotfiles $REPO_ROOT
 installBin $REPO_ROOT/bin my
-callInstallers
+callSubInstallers
