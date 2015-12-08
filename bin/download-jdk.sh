@@ -1,9 +1,10 @@
 #!/bin/sh
 
-# Dariusz Stefanski
-# 24.09.2014
 # Downloads specific version of JDK.
 # Example usage: ./download-jdk.sh 8 5 13
+#
+# Dariusz Stefanski
+# 24.09.2014
 
 if [ $# -ne 3 ]
 then
