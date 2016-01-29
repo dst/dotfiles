@@ -42,6 +42,7 @@ install maven
 
 # JavaScript
 install npm
+install-grunt.sh
 
 # Latex stuff
 install texlive-xetex texlive-latex-extra
