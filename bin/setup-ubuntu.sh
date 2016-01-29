@@ -40,6 +40,9 @@ install-groovy.sh
 install-oracle-jdk.sh 8
 install maven
 
+# JavaScript
+install npm
+
 # Latex stuff
 install texlive-xetex texlive-latex-extra
 
