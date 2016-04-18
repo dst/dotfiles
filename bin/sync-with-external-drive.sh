@@ -5,7 +5,7 @@
 # Syncs local disk with external drive
 
 EX_DRIVE="/media/$USER/ExpansionDrive"
-EXCLUDE=".cache"
+EXCLUDE=".cache .m2"
 OUT_LOG_FILE="rsync-stdout.log"
 ERR_LOG_FILE="rsync-stderr.log"
 RSYNC_CMD="rsync -avh --progress --exclude=$EXCLUDE"
