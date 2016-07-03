@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Boostraps dotfiles project.
+# Bootsraps dotfiles project.
 #
 # Dariusz Stefanski
 # 05.11.2014
