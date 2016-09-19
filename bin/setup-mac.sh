@@ -16,6 +16,6 @@ function installFromWeb {
 	echo
 }
 
-install jq wget wireshark
+install jq tree wget wireshark
 
 installFromWeb Alfred Spectacle
