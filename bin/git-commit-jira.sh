@@ -1,14 +1,19 @@
 #!/bin/bash
 
-# If we are on branch PROJECT-CaseNr_Description in git
-# then it will create a commit with message: PROJECT-CaseNr: massage
+# It extracts an JIRA issue number from a branch name
+# and creates a commit with a message: "issueNumber: message"
+#
+# Examples of branch names:
+# * ABC-123-cool-feature
+# * ABC-123_cool-feature
+# * issue/ABC-123-cool-feature
 #
 # Author: Dariusz Stefanski
 # Date:   20 Aug 2012
 
 if [ $# -lt 1 ]
 then
-  echo "Usage: $0 message [case]"
+  echo "Usage: $0 message [issueNumber]"
   exit
 fi
 
@@ -16,10 +21,13 @@ message=$1
 
 if [ $# -eq 2 ]
 then
-  case=$2
+  issueNumber=$2
 else
   branch=`git rev-parse --abbrev-ref HEAD`
-  case=`echo $branch | cut -d"_" -f1`
+  if [[ $branch =~ ([a-zA-Z]+-[0-9]+) ]]
+  then
+    issueNumber=${BASH_REMATCH[1]}
+  fi
 fi
 
-git commit -m "$case: $message"
+git commit -m "$issueNumber: $message"
