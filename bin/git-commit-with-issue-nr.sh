@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# It extracts an JIRA issue number from a branch name
+# It extracts an issue number from a branch name
 # and creates a commit with a message: "issueNumber: message"
 #
 # Examples of branch names:
