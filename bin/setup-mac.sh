@@ -18,6 +18,6 @@ function installFromWeb {
 	echo
 }
 
-install jq tree wget wireshark
+install jq ruby tree wget wireshark
 
 installFromWeb Alfred Spectacle Xcode
