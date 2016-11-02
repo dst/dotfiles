@@ -10,12 +10,12 @@ function install {
 
 function installFromWeb {
 	echo
-	echo "----------------------------"
-	echo "Remember to install from web: $@"
-	echo "----------------------------"
+	echo "----------------------------------------"
+	echo "Remember to install from web / App Store: $@"
+	echo "----------------------------------------"
 	echo
 }
 
 install jq tree wget wireshark
 
-installFromWeb Alfred Spectacle
+installFromWeb Alfred Spectacle Xcode
