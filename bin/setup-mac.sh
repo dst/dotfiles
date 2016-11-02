@@ -10,9 +10,11 @@ function install {
 
 function installFromWeb {
 	echo
-	echo "----------------------------------------"
-	echo "Remember to install from web / App Store: $@"
-	echo "----------------------------------------"
+	echo "------------------------------------"
+	echo "Remember to:                        "
+	echo " * install from web / App Store: $@ "
+	echo " * xcode-select --install           "
+	echo "------------------------------------"
 	echo
 }
 
