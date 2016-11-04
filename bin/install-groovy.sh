@@ -2,11 +2,10 @@
 
 # Dariusz Stefanski
 # 08.09.2014
-# Installs latest Groovy using GVM
+# Installs latest Groovy using SDKMAN! (The Software Development Kit Manager),
+# formerly known as GVM.
 
-# GVM the Groovy enVironment Manager
-curl -s get.gvmtool.net | bash
+curl -s get.sdkman.io | bash
 
-. ~/.gvm/bin/gvm-init.sh
-gvm install groovy
-
+source ~/.sdkman/bin/sdkman-init.sh
+sdk install groovy
