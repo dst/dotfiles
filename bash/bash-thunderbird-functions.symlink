@@ -45,9 +45,9 @@ function getPathForEmail {
     dirLinePrefix=`grep $email $PREFS_FILE | grep mail.server | cut -d, -f1 | sed "s/userName/directory/"`
 
     # Extract path:
-    email=`grep "$dirLinePrefix" $PREFS_FILE | sed -n 's/.*"\(.*thunderbird.*\)".*/\1/p'`
+    path=`grep "$dirLinePrefix" $PREFS_FILE | sed -n 's/.*"\(.*thunderbird.*\)".*/\1/p'`
 
-    echo $email
+    echo $path
 }
 
 function emailExists {
