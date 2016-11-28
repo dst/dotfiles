@@ -8,6 +8,10 @@ function install {
     brew install $@
 }
 
+function installCask {
+    brew cask install $@
+}
+
 function installFromWeb {
 	echo
 	echo "------------------------------------"
@@ -19,5 +23,5 @@ function installFromWeb {
 }
 
 install jq ruby tree watch wget wireshark
-
+installCask thunderbird
 installFromWeb Alfred Spectacle Xcode
