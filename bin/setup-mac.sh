@@ -22,6 +22,6 @@ function installFromWeb {
 	echo
 }
 
-install jq ruby tree watch wget wireshark
+install jq ruby tree youtube-dl watch wget wireshark
 installCask thunderbird
 installFromWeb Alfred Spectacle Xcode
