@@ -36,7 +36,8 @@ export PATH=~/programs/e-Deklaracje/bin:$PATH
 export PATH=~/programs/gradle/bin:$PATH
 
 # Groovy
-[[ -s ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
+export SDKMAN_DIR="~/.sdkman"
+[[ -s ~/.sdkman/bin/sdkman-init.sh ]] && source ~/.sdkman/bin/sdkman-init.sh
 
 # Heroku Toolbelt
 export PATH=/usr/local/heroku/bin:$PATH
