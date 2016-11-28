@@ -7,13 +7,26 @@
 
 # *default - profile directory, it can be also read from ~/.thunderbird profiles.ini file
 PROFILE_DIR=~/.thunderbird/*default
-PREFS_FILE="$PROFILE_DIR/prefs.js"
+PROFILE_DIR_MAC=~/Library/Thunderbird/Profiles/*default
 
 # Filters are located in files similar to:
 # ~/.thunderbird./abcdef.default/ImapMail/imap.example.com/msgFilterRules.dat
 # ~/.thunderbird./abcdef.default/ExQuilla/mail.example.com/msgFilterRules.dat
 FILTER_FILE="msgFilterRules.dat"
 
+function profileDir {
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        echo $PROFILE_DIR_MAC
+    else
+        echo $PROFILE_DIR
+    fi
+}
+
+function prefsFilePath() {
+    echo "`profileDir`/prefs.js"
+}
+
+PREFS_FILE=`prefsFilePath`
 
 # path is something like:
 # /home/user/.thunderbird/abcdef.default/ImapMail/imap.example.com
@@ -45,7 +58,7 @@ function getPathForEmail {
     dirLinePrefix=`grep $email $PREFS_FILE | grep mail.server | cut -d, -f1 | sed "s/userName/directory/"`
 
     # Extract path:
-    path=`grep "$dirLinePrefix" $PREFS_FILE | sed -n 's/.*"\(.*thunderbird.*\)".*/\1/p'`
+    path=`grep "$dirLinePrefix" $PREFS_FILE | sed -n 's/.*"\(.*[tT]hunderbird.*\)".*/\1/p'`
 
     echo $path
 }
