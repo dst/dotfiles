@@ -12,6 +12,11 @@ function installCask {
     brew cask install $@
 }
 
+function installCompletions {
+	brew tap homebrew/completions
+	brew install $@
+}
+
 function installFromWeb {
 	echo
 	echo "------------------------------------"
@@ -24,4 +29,5 @@ function installFromWeb {
 
 install jq ruby tree youtube-dl watch wget wireshark
 installCask thunderbird
+installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
