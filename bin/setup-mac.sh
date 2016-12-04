@@ -28,6 +28,6 @@ function installFromWeb {
 }
 
 install jq ruby tree youtube-dl watch wget wireshark
-installCask pgadmin4 thunderbird
+installCask pgadmin4 libreoffice thunderbird
 installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
