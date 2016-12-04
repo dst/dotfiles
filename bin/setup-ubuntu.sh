@@ -27,7 +27,7 @@ install-google-chrome.sh
 install rar
 
 # Database
-install pgadmin3 sqlite
+install pgadmin4 sqlite
 
 # Editors
 install zim vim kate kile
