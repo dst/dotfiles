@@ -41,8 +41,9 @@ install-oracle-jdk.sh 8
 install maven
 
 # JavaScript
-install npm
-install-grunt.sh
+install-nvm.sh
+install-node.sh
+install-js-packages.sh
 
 # Latex stuff
 install texlive-xetex texlive-latex-extra
