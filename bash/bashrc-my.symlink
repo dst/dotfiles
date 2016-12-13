@@ -51,6 +51,10 @@ export PATH=~/programs/mongodb-linux-i686-2.2.3/bin:$PATH
 # Mozilla
 export MOZILLA_FIVE_HOME=/usr/lib/mozilla
 
+# nvm, Node Version Manager
+export NVM_DIR=~/.nvm
+. "$NVM_DIR/nvm.sh"
+
 # PyCharm
 export PATH=~/programs/pycharm-community/bin/:$PATH
 
