@@ -27,7 +27,12 @@ function installFromWeb {
 	echo
 }
 
-install jq node ruby tree youtube-dl watch wget wireshark
+# JavaScript
+install jq nvm
+install-node.sh
+install-js-packages.sh
+
+install ruby tree youtube-dl watch wget wireshark
 installCask pgadmin4 libreoffice thunderbird
 installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
