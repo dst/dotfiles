@@ -1,0 +1,5 @@
+. ~/.bash-functions
+
+if isMac; then
+	source $(brew --prefix nvm)/nvm.sh
+fi
