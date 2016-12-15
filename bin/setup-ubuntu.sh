@@ -36,9 +36,11 @@ install zim vim kate kile
 install gimp
 
 # JVM
-install-groovy.sh
+install-sdk.sh
+sdk install groovy
+sdk install maven
+sdk install scala
 install-oracle-jdk.sh 8
-install maven
 
 # JavaScript
 install-nvm.sh

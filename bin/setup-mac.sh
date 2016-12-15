@@ -32,6 +32,14 @@ install jq nvm
 install-node.sh
 install-js-packages.sh
 
+# JVM
+install-sdk.sh
+sdk install groovy
+sdk install java
+sdk install maven
+sdk install scala
+install javarepl
+
 install ruby tree youtube-dl watch wget wireshark
 installCask pgadmin4 libreoffice thunderbird
 installCompletions maven-completion
