@@ -35,10 +35,6 @@ export PATH=~/programs/e-Deklaracje/bin:$PATH
 # Gradle
 export PATH=~/programs/gradle/bin:$PATH
 
-# Groovy
-export SDKMAN_DIR="~/.sdkman"
-[[ -s ~/.sdkman/bin/sdkman-init.sh ]] && source ~/.sdkman/bin/sdkman-init.sh
-
 # Heroku Toolbelt
 export PATH=/usr/local/heroku/bin:$PATH
 
@@ -64,6 +60,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Scala
 export PATH=~/programs/sbt/bin:$PATH
+
+# SDK Man
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s ~/.sdkman/bin/sdkman-init.sh ]] && source ~/.sdkman/bin/sdkman-init.sh
 
 # Tor
 export PATH=~/programs/tor-browser:$PATH
