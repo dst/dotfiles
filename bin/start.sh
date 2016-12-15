@@ -9,6 +9,9 @@
 
 echo "Starting personal"
 
+# Checks if something (Java, Groovy, etc.) can be upgrated.
+sdk outdated
+
 pullGitRepo $DOTFILES_PATH
 pullGitRepo $DOTFILES_PRIV_PATH
 pullGitRepo $IT_ZIM_NOTES
