@@ -28,7 +28,7 @@ function installFromWeb {
 }
 
 # JavaScript
-install jq nvm
+install jid jq nvm
 install-node.sh
 install-js-packages.sh
 
