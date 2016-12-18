@@ -40,6 +40,9 @@ sdk install maven
 sdk install scala
 install javarepl
 
+# Qt
+installCask qt-creator
+
 install ruby tree youtube-dl watch wget wireshark
 installCask pgadmin4 libreoffice thunderbird
 installCompletions maven-completion
