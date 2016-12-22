@@ -27,6 +27,9 @@ function installFromWeb {
 	echo
 }
 
+# PaaS - Platform as a Service
+install heroku
+
 # JavaScript
 install jid jq nvm
 install-node.sh
