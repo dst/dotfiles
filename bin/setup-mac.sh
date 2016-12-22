@@ -43,6 +43,9 @@ install javarepl
 # Qt
 installCask qt-creator
 
+# Terminals
+install fish
+
 install ruby tree youtube-dl watch wget wireshark
 installCask pgadmin4 libreoffice thunderbird
 installCompletions maven-completion
