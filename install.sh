@@ -24,3 +24,9 @@ createBackupDir
 installHomeDotfiles $REPO_ROOT
 installBin $REPO_ROOT/bin my
 callSubInstallers
+
+if isMac; then
+  installBin $REPO_ROOT/bin/darwin my/darwin
+else
+  installBin $REPO_ROOT/bin/ubuntu my/ubuntu
+fi

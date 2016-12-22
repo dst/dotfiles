@@ -1,0 +1,5 @@
+. ~/.bash-functions
+
+if ! isMac; then
+  export PATH=~/bin/my/ubuntu:$PATH
+fi

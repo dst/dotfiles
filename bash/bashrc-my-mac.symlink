@@ -1,5 +1,7 @@
 . ~/.bash-functions
 
 if isMac; then
-	source $(brew --prefix nvm)/nvm.sh
+  export PATH=~/bin/my/darwin:$PATH
+
+  source $(brew --prefix nvm)/nvm.sh
 fi
