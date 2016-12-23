@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Opens usefull programs
+# Opens useful programs
 # Dariusz Stefanski
 
 . ~/.bash-functions
@@ -16,9 +16,11 @@ pullGitRepo $DOTFILES_PATH
 pullGitRepo $DOTFILES_PRIV_PATH
 pullGitRepo $IT_ZIM_NOTES
 
-startPrograms thunderbird skype pidgin firefox google-chrome spotify liferea
+startPrograms thunderbird skype pidgin firefox google-chrome liferea
 startProgram zim $IT_ZIM_NOTES
 startProgram keepassx $KEEPASSX_DB_PATH
 
 # my applications:
 startPrograms dontforget promo-finder
+
+start-os-specific.sh
