@@ -46,6 +46,9 @@ install javarepl
 # Qt
 installCask qt-creator
 
+# Relax
+installCask spotify
+
 # Terminals
 install fish
 
