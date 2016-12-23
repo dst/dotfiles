@@ -3,4 +3,4 @@
 # Author: Dariusz Stefanski
 
 pattern=$1
-find -iname "*$pattern*"
+find . -iname "*$pattern*"
