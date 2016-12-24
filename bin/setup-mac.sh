@@ -30,9 +30,6 @@ function installFromWeb {
 # Communication
 installCask skype
 
-# PaaS - Platform as a Service
-install heroku
-
 # JavaScript
 install jid jq nvm
 install-node.sh
@@ -45,6 +42,9 @@ sdk install java
 sdk install maven
 sdk install scala
 install javarepl
+
+# PaaS - Platform as a Service
+install heroku
 
 # Qt
 installCask qt-creator
