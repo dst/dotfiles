@@ -27,6 +27,9 @@ function installFromWeb {
 	echo
 }
 
+# Communication
+installCask skype
+
 # PaaS - Platform as a Service
 install heroku
 
