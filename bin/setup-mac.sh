@@ -28,7 +28,7 @@ function installFromWeb {
 }
 
 # Communication
-installCask skype
+installCask skype thunderbird
 
 # JavaScript
 install jid jq nvm
@@ -56,6 +56,6 @@ installCask spotify
 install fish
 
 install ruby tree youtube-dl watch wget wireshark
-installCask pgadmin4 libreoffice thunderbird
+installCask pgadmin4 libreoffice
 installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
