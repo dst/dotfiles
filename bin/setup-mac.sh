@@ -27,6 +27,9 @@ function installFromWeb {
 	echo
 }
 
+# Basic
+install readline
+
 # Communication
 installCask skype thunderbird
 
