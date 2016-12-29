@@ -49,6 +49,9 @@ install javarepl
 # PaaS - Platform as a Service
 install heroku
 
+# Python
+install python3
+
 # Qt
 installCask qt-creator
 
