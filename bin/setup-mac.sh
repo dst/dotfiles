@@ -59,6 +59,8 @@ installCask qt-creator
 installCask spotify
 
 # Terminals
+installCask iterm2
+install-iterm2-utilities.sh
 install fish
 
 install ruby tree youtube-dl watch wget wireshark
