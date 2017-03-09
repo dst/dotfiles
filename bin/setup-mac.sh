@@ -46,6 +46,13 @@ sdk install maven
 sdk install scala
 install javarepl
 
+# Mobile
+install android
+
+# NTFS
+installCask osxfuse
+install ntfs-3g
+
 # PaaS - Platform as a Service
 install heroku
 
