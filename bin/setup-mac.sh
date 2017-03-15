@@ -49,6 +49,9 @@ sdk install maven
 sdk install scala
 install javarepl
 
+# Linux
+installCask unetbootin
+
 # Mobile
 install android
 
