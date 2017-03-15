@@ -33,6 +33,9 @@ install readline
 # Communication
 installCask skype thunderbird
 
+# Database
+installCask pgadmin4
+
 # JavaScript
 install jid jq nvm
 install-node.sh
@@ -71,6 +74,6 @@ install-iterm2-utilities.sh
 install fish
 
 install ruby tree youtube-dl watch wget wireshark
-installCask pgadmin4 libreoffice
+installCask libreoffice
 installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
