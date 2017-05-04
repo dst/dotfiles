@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# It sets my private email in a git configuration for a current repository.
+# It sets my dev private email in a git configuration for the current repository.
 #
 # Author: Dariusz Stefanski
 # Date:   29 Jun 2016
 
-git config user.email d.a.stefanski@gmail.com
+git config user.email dstefanski.dev@gmail.com
