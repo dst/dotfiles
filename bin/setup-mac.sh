@@ -34,6 +34,7 @@ install readline
 installCask skype thunderbird
 
 # Database
+install mongodb
 installCask pgadmin4
 
 # JavaScript
