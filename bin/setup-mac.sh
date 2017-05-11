@@ -27,6 +27,9 @@ function installFromWeb {
 	echo
 }
 
+# AWS
+install awscli
+
 # Basic
 install readline
 
