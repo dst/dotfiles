@@ -27,6 +27,8 @@ function installFromWeb {
 	echo
 }
 
+install-brew.sh
+
 # AWS
 install awscli
 
