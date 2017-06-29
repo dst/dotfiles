@@ -84,6 +84,9 @@ install heroku
 # Qt
 installCask qt-creator
 
+# Storage
+installCask dropbox
+
 # Terminals
 installCask iterm2
 install-iterm2-utilities.sh
