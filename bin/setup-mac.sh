@@ -67,6 +67,9 @@ install android
 # Music
 installCask spotify
 
+# Network
+install wireshark
+
 # NTFS
 installCask osxfuse
 install ntfs-3g
@@ -85,6 +88,6 @@ installCask iterm2
 install-iterm2-utilities.sh
 install fish
 
-install tree youtube-dl watch wget wireshark
+install tree youtube-dl watch wget
 installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
