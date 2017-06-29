@@ -55,6 +55,9 @@ sdk install maven
 sdk install scala
 install javarepl
 
+# Languages
+install python3 ruby
+
 # Linux
 installCask unetbootin
 
@@ -74,9 +77,6 @@ installCask libreoffice
 # PaaS - Platform as a Service
 install heroku
 
-# Python
-install python3
-
 # Qt
 installCask qt-creator
 
@@ -85,6 +85,6 @@ installCask iterm2
 install-iterm2-utilities.sh
 install fish
 
-install ruby tree youtube-dl watch wget wireshark
+install tree youtube-dl watch wget wireshark
 installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
