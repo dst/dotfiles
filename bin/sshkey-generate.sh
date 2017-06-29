@@ -18,3 +18,11 @@ if [ -f ~/.ssh/id_rsa ]; then
 fi
 
 ssh-keygen -t rsa -b 4096 -C $email
+
+echo "=========================================="
+echo "Please remember to add your public ssh key to:"
+echo "- Bitbucket"
+echo "- GitHub"
+
+sshkey-to-clipboard.sh
+echo "Your public ssh key was just copied to the clipboard using sshkey-to-clipboard.sh script."
