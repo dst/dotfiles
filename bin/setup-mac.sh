@@ -65,6 +65,9 @@ install android
 installCask osxfuse
 install ntfs-3g
 
+# Office
+installCask libreoffice
+
 # PaaS - Platform as a Service
 install heroku
 
@@ -83,6 +86,5 @@ install-iterm2-utilities.sh
 install fish
 
 install ruby tree youtube-dl watch wget wireshark
-installCask libreoffice
 installCompletions maven-completion
 installFromWeb Alfred Spectacle Xcode
