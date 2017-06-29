@@ -89,5 +89,7 @@ install-iterm2-utilities.sh
 install fish
 
 install tree youtube-dl watch wget
+
 installCompletions maven-completion
+
 installFromWeb Alfred Spectacle Xcode
