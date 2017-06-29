@@ -31,6 +31,8 @@ else
   installBin $REPO_ROOT/bin/ubuntu my/ubuntu
 fi
 
+# Reload Bash profile first to have access to bin scipts.
+. ~/.bashrc
 if [ ! -f ~/.ssh/id_rsa ]; then
   echo "Generating strong ssh keys..."
   echo "What is your email address which should be used to identify your ssh keys?"
