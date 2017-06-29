@@ -59,6 +59,7 @@ install javarepl
 install python3 ruby
 
 # Linux
+install tree watch wget
 installCask unetbootin
 
 # Mobile
@@ -88,7 +89,7 @@ installCask iterm2
 install-iterm2-utilities.sh
 install fish
 
-install tree youtube-dl watch wget
+install youtube-dl
 
 installCompletions maven-completion
 
