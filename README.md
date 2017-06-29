@@ -2,7 +2,8 @@
 
 
 ## Installation
-Required programs: git.
+Requirements:
+- git
 
 ```bash
 $ bash -c "`curl -fsSL https://raw.github.com/dst/dotfiles/master/bootstrap.sh`"
