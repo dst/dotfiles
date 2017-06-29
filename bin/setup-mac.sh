@@ -89,6 +89,7 @@ installCask iterm2
 install-iterm2-utilities.sh
 install fish
 
+# Video
 install youtube-dl
 
 installCompletions maven-completion
