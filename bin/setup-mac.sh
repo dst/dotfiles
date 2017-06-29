@@ -61,6 +61,9 @@ installCask unetbootin
 # Mobile
 install android
 
+# Music
+installCask spotify
+
 # NTFS
 installCask osxfuse
 install ntfs-3g
@@ -76,9 +79,6 @@ install python3
 
 # Qt
 installCask qt-creator
-
-# Relax
-installCask spotify
 
 # Terminals
 installCask iterm2
