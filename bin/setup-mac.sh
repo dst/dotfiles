@@ -79,6 +79,9 @@ installCask libreoffice
 # PaaS - Platform as a Service
 install heroku
 
+# Productivity
+installCask alfred
+
 # Qt
 installCask qt-creator
 
@@ -96,4 +99,4 @@ install fish
 # Video
 install youtube-dl
 
-installFromWeb Alfred Spectacle Xcode
+installFromWeb Spectacle Xcode
