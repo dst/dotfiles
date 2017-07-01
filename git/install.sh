@@ -20,8 +20,9 @@ setupGitconfig() {
     read email
 
     cp $GITCONFIG_EXAMPLE $GITCONFIG
-    sed -i "s/NAME/$name/g" $GITCONFIG
-    sed -i "s/EMAIL/$email/g" $GITCONFIG
+    # OS X has BSD sed, where the suffix for i is obligatory
+    sed -i '' "s/NAME/$name/g" $GITCONFIG
+    sed -i '' "s/EMAIL/$email/g" $GITCONFIG
 
     echo ".gitconfig setup done"
   fi
