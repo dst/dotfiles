@@ -11,6 +11,7 @@
 REPO_ROOT=`pwd`
 
 installGradle() {
+  mkdir ~/.gradle
   addLink $REPO_ROOT/gradle/gradle.properties ~/.gradle/gradle.properties
 }
 
