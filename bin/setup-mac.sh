@@ -62,7 +62,7 @@ install javarepl
 install python3 ruby
 
 # Linux
-install tree watch wget
+install bash-completion tree watch wget
 installCask unetbootin
 
 # Mobile
