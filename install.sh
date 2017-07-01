@@ -21,21 +21,9 @@ callSubInstallers() {
 
 info "Installing dotfiles"
 createBackupDir
-installHomeDotfiles $REPO_ROOT
 installBin $REPO_ROOT/bin my
 callSubInstallers
+installHomeDotfiles $REPO_ROOT
 
-if isMac; then
-  installBin $REPO_ROOT/bin/darwin my/darwin
-else
-  installBin $REPO_ROOT/bin/ubuntu my/ubuntu
-fi
 
-# Reload Bash profile first to have access to bin scipts.
-. ~/.bashrc
-if [ ! -f ~/.ssh/id_rsa ]; then
-  echo "Generating strong ssh keys..."
-  echo "What is your email address which should be used to identify your ssh keys?"
-  read email
-  sshkey-generate.sh $email
-fi
+
