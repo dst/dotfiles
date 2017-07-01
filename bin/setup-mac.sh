@@ -80,7 +80,7 @@ installCask libreoffice
 install heroku
 
 # Productivity
-installCask alfred
+installCask alfred spectacle
 
 # Qt
 installCask qt-creator
@@ -99,4 +99,4 @@ install fish
 # Video
 install youtube-dl
 
-installFromWeb Spectacle Xcode
+installFromWeb Xcode
