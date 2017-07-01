@@ -42,6 +42,9 @@ installCask skype thunderbird
 install mongodb
 installCask pgadmin4
 
+# Editor
+installCask sublime-text
+
 # JavaScript
 install jid jq nvm
 install-node.sh
