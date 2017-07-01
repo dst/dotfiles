@@ -84,6 +84,9 @@ install heroku
 # Qt
 installCask qt-creator
 
+# Security
+installCask keepassx
+
 # Storage
 installCask dropbox
 
