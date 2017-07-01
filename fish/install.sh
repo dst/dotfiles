@@ -8,6 +8,8 @@
 
 . bash/bash-functions.symlink
 
+REPO_ROOT=`pwd`
+
 installFish() {
   addLink $REPO_ROOT/fish ~/.config/fish
 }
