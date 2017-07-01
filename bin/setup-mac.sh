@@ -12,11 +12,6 @@ function installCask {
     brew cask install $@
 }
 
-function installCompletions {
-	brew tap homebrew/completions
-	brew install $@
-}
-
 function installFromWeb {
 	echo
 	echo "------------------------------------"
@@ -56,7 +51,7 @@ sdk install groovy
 sdk install java
 sdk install maven
 sdk install scala
-install javarepl
+install javarepl maven-completion
 
 # Languages
 install python3 ruby
@@ -100,7 +95,5 @@ install fish
 
 # Video
 install youtube-dl
-
-installCompletions maven-completion
 
 installFromWeb Alfred Spectacle Xcode
