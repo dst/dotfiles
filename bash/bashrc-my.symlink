@@ -61,7 +61,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Scala
 export PATH=~/programs/sbt/bin:$PATH
 
-# SDK Man
+# SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s ~/.sdkman/bin/sdkman-init.sh ]] && source ~/.sdkman/bin/sdkman-init.sh
 
