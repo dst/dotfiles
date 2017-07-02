@@ -41,7 +41,8 @@ installCask pgadmin4
 installCask sublime-text
 
 # JavaScript
-install jid jq nvm
+install jid jq
+install-nvm.sh
 install-node.sh
 install-js-packages.sh
 

@@ -3,7 +3,6 @@
 if isMac; then
   export PATH=~/bin/my/darwin:$PATH
 
-  source $(brew --prefix nvm)/nvm.sh
 
   [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 fi
