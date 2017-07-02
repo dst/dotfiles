@@ -48,6 +48,7 @@ install-js-packages.sh
 
 # JVM
 install-sdk.sh
+. ~/.sdkman/bin/sdkman-init.sh
 sdk install groovy
 sdk install java
 sdk install maven
