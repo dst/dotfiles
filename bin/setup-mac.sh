@@ -40,6 +40,9 @@ installCask pgadmin4
 # Editor
 installCask sublime-text
 
+# Graphics
+installCask gimp
+
 # JavaScript
 install jid jq
 install-nvm.sh
