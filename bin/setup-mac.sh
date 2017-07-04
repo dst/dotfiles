@@ -37,8 +37,8 @@ installCask skype thunderbird
 install mongodb
 installCask pgadmin4
 
-# Editor
-installCask sublime-text
+# Editor/IDE
+installCask intellij-idea sublime-text
 
 # Graphics
 installCask gimp
