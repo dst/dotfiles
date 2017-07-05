@@ -2,7 +2,7 @@
 
 # Dariusz Stefanski
 # 08.09.2014
-# Clones all repos from github organisation
+# Clones all repos from the given GitHub organisation
 
 if [ $# -ne 1 ]
 then
