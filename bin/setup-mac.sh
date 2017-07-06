@@ -39,6 +39,7 @@ installCask pgadmin4
 
 # Editor/IDE
 installCask intellij-idea sublime-text
+install-zim.sh
 
 # Graphics
 installCask gimp

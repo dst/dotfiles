@@ -2,7 +2,6 @@
 
 if isMac; then
   export PATH=~/bin/my/darwin:$PATH
-
-
   [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+  alias zim="python ~/programs/zim-desktop-wiki/zim.py"
 fi
