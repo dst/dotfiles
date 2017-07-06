@@ -19,11 +19,14 @@ callSubInstallers() {
   done
 }
 
+createDirectories() {
+	mkdir ~/myprojects
+	mkdir ~/programs
+}
+
 info "Installing dotfiles"
 createBackupDir
 installBin $REPO_ROOT/bin my
 callSubInstallers
 installHomeDotfiles $REPO_ROOT
-
-
-
+createDirectories
