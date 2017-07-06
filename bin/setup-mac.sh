@@ -105,4 +105,7 @@ install fish
 # Video
 install youtube-dl
 
+# Virualization
+install docker docker-machine docker-compose
+
 installFromWeb Xcode
