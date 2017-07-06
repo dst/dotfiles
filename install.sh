@@ -24,9 +24,15 @@ createDirectories() {
 	mkdir ~/programs
 }
 
+cloneMyGitHubRepos() {
+	cd ~/myprojects
+	./bin/github-clone-my-repos.sh
+}
+
 info "Installing dotfiles"
 createBackupDir
 installBin $REPO_ROOT/bin my
 callSubInstallers
 installHomeDotfiles $REPO_ROOT
 createDirectories
+cloneMyGitHubRepos
