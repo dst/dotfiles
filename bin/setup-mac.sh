@@ -49,6 +49,7 @@ install jid jq
 install-nvm.sh
 install-node.sh
 install-js-packages.sh
+install-yarn.sh
 
 # JVM
 install-sdk.sh
