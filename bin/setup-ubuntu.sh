@@ -45,7 +45,7 @@ install-oracle-jdk.sh 8
 # JavaScript
 install-nvm.sh
 install-node.sh
-install-js-packages.sh
+install-npm-packages.sh
 
 # Latex stuff
 install texlive-xetex texlive-latex-extra
