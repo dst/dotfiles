@@ -105,6 +105,7 @@ install fish
 
 # Video
 install youtube-dl
+installCask vlc
 
 # Virualization
 installCask virtualbox
