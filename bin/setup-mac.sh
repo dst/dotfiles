@@ -64,7 +64,7 @@ install javarepl maven-completion
 install python3 ruby
 
 # Linux
-install bash-completion tree watch wget
+install bash-completion coreutils tree watch wget
 installCask unetbootin
 
 # Mobile
