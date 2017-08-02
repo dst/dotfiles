@@ -27,8 +27,8 @@ install-brew.sh
 # AWS
 install awscli
 
-# Basic
-install readline
+# Bash / command line
+install bash-completion coreutils readline tree watch wget
 
 # Communication
 installCask skype thunderbird
@@ -64,7 +64,6 @@ install javarepl maven-completion
 install python3 ruby
 
 # Linux
-install bash-completion coreutils tree watch wget
 installCask unetbootin
 
 # Mobile
