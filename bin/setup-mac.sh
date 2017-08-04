@@ -63,6 +63,9 @@ install javarepl maven-completion
 # Languages
 install python3 ruby
 
+# Latex
+installCask mactex
+
 # Linux
 installCask unetbootin
 
