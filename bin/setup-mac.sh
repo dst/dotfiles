@@ -66,6 +66,9 @@ install python3 ruby
 # Linux
 installCask unetbootin
 
+# Mac
+screenshots-setup.sh
+
 # Mobile
 install android
 
