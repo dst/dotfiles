@@ -16,4 +16,3 @@ version=$2
 
 git tag "RELEASE_$version" $sha
 git push --tags
-
