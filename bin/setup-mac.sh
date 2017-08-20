@@ -108,6 +108,9 @@ installCask iterm2
 install-iterm2-utilities.sh
 install fish
 
+# Text
+install cloc
+
 # Video
 install youtube-dl
 installCask vlc
