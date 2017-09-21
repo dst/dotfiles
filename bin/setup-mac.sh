@@ -105,6 +105,7 @@ installCask keepassx
 installCask dropbox
 
 # Terminals
+install mc
 installCask iterm2
 install-iterm2-utilities.sh
 install fish
