@@ -5,7 +5,7 @@
 # Syncs local disk with external drive
 
 EX_DRIVE_NAME="ExpansionDrive"
-EXCLUDES="--exclude .cache --exclude .gradle --exclude .m2 --exclude .Trash"
+EXCLUDES="--exclude .cache --exclude .docker --exclude .gradle --exclude .m2 --exclude .Trash"
 OUT_LOG_FILE="rsync-stdout.log"
 ERR_LOG_FILE="rsync-stderr.log"
 RSYNC_CMD="rsync -avh --progress $EXCLUDES"
