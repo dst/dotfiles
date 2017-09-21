@@ -42,6 +42,7 @@ installCask intellij-idea sublime-text
 install-zim.sh
 
 # Graphics
+install imagemagick
 installCask gimp
 
 # JavaScript
