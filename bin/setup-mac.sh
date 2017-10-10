@@ -28,7 +28,7 @@ install-brew.sh
 install awscli
 
 # Bash / command line
-install bash-completion coreutils readline tree watch wget
+install bash-completion coreutils readline tree watch
 
 # Communication
 installCask skype thunderbird
@@ -80,7 +80,7 @@ install android
 installCask spotify
 
 # Network
-install httpie wireshark
+install httpie wget wireshark
 
 # NTFS
 installCask osxfuse
