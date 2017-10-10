@@ -80,7 +80,7 @@ install android
 installCask spotify
 
 # Network
-install wireshark
+install httpie wireshark
 
 # NTFS
 installCask osxfuse
