@@ -4,8 +4,9 @@
 # 15.03.2012
 # Syncs local disk with external drive
 
-EX_DRIVE_NAME="ExpansionDrive"
-EXCLUDES="--exclude .cache --exclude .docker --exclude .gradle --exclude .m2 --exclude .Trash"
+#EX_DRIVE_NAME="ExpansionDrive"
+EX_DRIVE_NAME="SeagateBackupPlusDrive"
+EXCLUDES="--exclude .cache --exclude .docker --exclude .gradle --exclude .m2 --exclude .npm --exclude .Trash"
 OUT_LOG_FILE="rsync-stdout.log"
 ERR_LOG_FILE="rsync-stderr.log"
 RSYNC_CMD="rsync -avh --progress $EXCLUDES"
