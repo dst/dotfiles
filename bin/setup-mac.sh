@@ -98,6 +98,9 @@ installCask alfred spectacle
 # Qt
 installCask qt-creator
 
+# SCM (Git, etc.)
+brew install bash-git-prompt
+
 # Security
 installCask keepassx
 

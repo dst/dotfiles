@@ -78,7 +78,7 @@ install keepassx
 # SCM
 install git tig gitk gitstats gource mercurial
 install-gdub.sh
-git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
+install-bash-git-prompt.sh
 
 # Sublime Text 2
 install-sublime-text2.sh
