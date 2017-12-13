@@ -35,7 +35,7 @@ installCask skype thunderbird
 
 # Database
 install mongodb
-installCask pgadmin4 sqlitebrowser
+installCask pgadmin4 db-browser-for-sqlite
 
 # Editor/IDE
 installCask intellij-idea sublime-text
