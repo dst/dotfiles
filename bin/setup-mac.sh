@@ -60,6 +60,7 @@ sdk install java
 sdk install maven
 sdk install scala
 install javarepl maven-completion
+installCask visualvm
 
 # Languages
 install python3 ruby
