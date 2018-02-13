@@ -58,6 +58,7 @@ install-sdk.sh
 sdk install groovy
 sdk install java
 sdk install maven
+sdk install sbt
 sdk install scala
 install javarepl maven-completion
 installCask visualvm
