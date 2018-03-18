@@ -17,3 +17,6 @@ npm install -g http-server
 
 # Ngrok exposes your localhost to the web. https://ngrok.com
 npm install -g ngrok
+
+# ncu upgrades your package.json deps to the latest versions
+npm install -g npm-check-updates
