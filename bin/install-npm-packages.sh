@@ -12,11 +12,11 @@ npm install -g npm@latest
 # Grunt - The JavaScript Task Runner
 npm install -g grunt-cli
 
-# http-server is a simple, zero-configuration command-line http server
-npm install -g http-server
-
-# Ngrok exposes your localhost to the web. https://ngrok.com
+# Exposes your localhost to the web. https://ngrok.com
 npm install -g ngrok
 
 # ncu upgrades your package.json deps to the latest versions
 npm install -g npm-check-updates
+
+# A simple, zero-configuration command-line http server
+npm install -g http-server
