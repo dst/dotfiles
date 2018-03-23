@@ -28,7 +28,7 @@ install-brew.sh
 install awscli
 
 # Bash / command line
-install bash-completion coreutils fdupes readline tree watch
+install bash-completion coreutils fdupes readline rename tree watch
 
 # Communication
 installCask skype thunderbird
