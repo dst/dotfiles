@@ -57,6 +57,7 @@ install-sdk.sh
 . ~/.sdkman/bin/sdkman-init.sh
 sdk install groovy
 sdk install java
+sdk install kotlin
 sdk install maven
 sdk install sbt
 sdk install scala
