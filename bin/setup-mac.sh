@@ -106,6 +106,7 @@ installCask qt-creator
 brew install bash-git-prompt
 
 # Security
+install gpg
 installCask keepassx
 
 # Storage
