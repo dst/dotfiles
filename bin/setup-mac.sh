@@ -97,7 +97,7 @@ installCask libreoffice
 install heroku
 
 # Productivity
-installCask alfred shiftit spectacle
+installCask alfred magicprefs shiftit spectacle
 
 # Qt
 installCask qt-creator
