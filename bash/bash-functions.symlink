@@ -159,3 +159,14 @@ function ctrlc() {
 function ctrlv() {
     xclip -selection clipboard -o
 }
+
+# A device (external drive, Kindle) can be mounted in a diffrent directory, depending on OS:
+# * Ubuntu: /media/$USER/ExpansionDrive
+# * Mac: /Volumes/ExpansionDrive
+#
+# mount return the following output:
+# /dev/disk2s1 on /Volumes/ExpansionDrive (ufsd_NTFS, local, nodev, nosuid, noowners)
+function findDeviceDir() {
+    device=$1
+    mount | grep $device | cut -d" " -f3
+}

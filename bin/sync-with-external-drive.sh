@@ -4,6 +4,8 @@
 # 15.03.2012
 # Syncs local disk with external drive
 
+. ~/.bash-functions
+
 #EX_DRIVE_NAME="ExpansionDrive"
 EX_DRIVE_NAME="SeagateBackupPlusDrive"
 EXCLUDES="--exclude .cache --exclude .docker --exclude .gradle --exclude .m2 --exclude .npm --exclude .sbt --exclude .Trash --exclude Library"
@@ -11,18 +13,8 @@ OUT_LOG_FILE="rsync-stdout.log"
 ERR_LOG_FILE="rsync-stderr.log"
 RSYNC_CMD="rsync -avh --progress $EXCLUDES"
 
-# External drive can be mounted in a diffrent directory, depending on OS:
-# * Ubuntu: /media/$USER/ExpansionDrive
-# * Mac: /Volumes/ExpansionDrive
-#
-# mount return the following output:
-# /dev/disk2s1 on /Volumes/ExpansionDrive (ufsd_NTFS, local, nodev, nosuid, noowners)
-function findExternalDriveDir() {
-    mount | grep $EX_DRIVE_NAME | cut -d" " -f3
-}
-
 src=$HOME
-dst="`findExternalDriveDir`/`hostname`"
+dst="`findDeviceDir $EX_DRIVE_NAME`/`hostname`"
 
 echo "Syncing $src to $dst"
 
