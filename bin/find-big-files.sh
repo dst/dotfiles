@@ -14,4 +14,4 @@ fi
 
 sizeThreshold=$1
 
-find  -type f -size +${sizeThreshold}M -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
+find . -type f -size +${sizeThreshold}M -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
