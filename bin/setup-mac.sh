@@ -129,4 +129,4 @@ installCask vlc
 installCask virtualbox
 install docker docker-machine docker-compose
 
-installFromWeb Xcode
+installFromWeb Xcode Monosnap
