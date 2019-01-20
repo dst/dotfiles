@@ -87,7 +87,7 @@ installCask spotify
 
 # Network
 install httpie wget wireshark
-installCask insomnia postman
+installCask insomnia postman wireshark
 
 # NTFS
 installCask osxfuse
