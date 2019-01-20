@@ -31,7 +31,7 @@ install awscli
 install bash-completion coreutils fdupes readline rename tree watch
 
 # Communication
-installCask skype thunderbird
+installCask skype slack thunderbird
 
 # Database
 install mongodb
