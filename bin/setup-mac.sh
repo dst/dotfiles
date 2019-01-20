@@ -64,6 +64,9 @@ sdk install scala
 install javarepl maven-completion mvnvm
 installCask visualvm
 
+# Kotlin
+install shyiko/ktlint/ktlint
+
 # Languages
 install python3 ruby
 
