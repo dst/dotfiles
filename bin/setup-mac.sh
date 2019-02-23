@@ -61,6 +61,7 @@ sdk install kotlin
 sdk install maven
 sdk install sbt
 sdk install scala
+sdk install springboot
 install javarepl maven-completion mvnvm
 installCask visualvm
 
