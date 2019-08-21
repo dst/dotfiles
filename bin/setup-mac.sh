@@ -79,6 +79,7 @@ installCask unetbootin
 
 # Mac
 screenshots-setup.sh
+installCask coconutbattery
 
 # Mobile
 install android
