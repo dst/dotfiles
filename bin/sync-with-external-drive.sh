@@ -8,7 +8,7 @@
 
 #EX_DRIVE_NAME="ExpansionDrive"
 EX_DRIVE_NAME="SeagateBackupPlusDrive"
-EXCLUDES="--exclude .cache --exclude .docker --exclude .gradle --exclude .m2 --exclude .npm --exclude .sbt --exclude .Trash --exclude Library"
+EXCLUDES="--exclude .cache --exclude .docker --exclude .gradle --exclude .ivy2 --exclude .m2 --exclude .npm --exclude .sbt --exclude .Trash --exclude Library"
 OUT_LOG_FILE="rsync-stdout.log"
 ERR_LOG_FILE="rsync-stderr.log"
 RSYNC_CMD="rsync -avh --progress $EXCLUDES"
