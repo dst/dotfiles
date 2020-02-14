@@ -7,17 +7,17 @@
 
 if [ $# -ne 1 ]
 then
-  echo "Usage: $0 email"
+  echo "Usage: $0 keyName"
   exit
 fi
-email=$1
+keyName=$1
 
 if [ -f ~/.ssh/id_rsa ]; then
 	echo "You have already ssh keys. I will not override them. Exiting..."
 	exit
 fi
 
-ssh-keygen -t rsa -b 4096 -C $email
+ssh-keygen -t rsa -b 4096 -C $keyName
 
 echo "=========================================="
 echo "Please remember to add your public ssh key to:"
