@@ -32,7 +32,7 @@ cloneMyGitHubRepos() {
 info "Installing dotfiles"
 createBackupDir
 installBin $REPO_ROOT/bin my
-callSubInstallers
 installHomeDotfiles $REPO_ROOT
+callSubInstallers
 createDirectories
 cloneMyGitHubRepos
