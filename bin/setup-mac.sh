@@ -38,7 +38,8 @@ install mongodb
 installCask pgadmin4 db-browser-for-sqlite
 
 # Editor/IDE
-installCask intellij-idea sublime-text
+installCask sublime-text
+installCask jetbrains-toolbox # Used to install Intellij and manage its versions.
 install-zim.sh
 
 # Graphics
