@@ -23,6 +23,7 @@ echo "=========================================="
 echo "Please remember to add your public ssh key to:"
 echo "- Bitbucket"
 echo "- GitHub"
+echo "- Stash"
 
 sshkey-to-clipboard.sh
 echo "Your public ssh key was just copied to the clipboard using sshkey-to-clipboard.sh script."
