@@ -70,7 +70,7 @@ installCask visualvm
 install shyiko/ktlint/ktlint
 
 # Languages
-install python3 ruby
+install python3
 
 # Latex
 installCask mactex
