@@ -25,8 +25,10 @@ createDirectories() {
 }
 
 cloneMyGitHubRepos() {
-	cd ~/myprojects
-	./bin/github-clone-my-repos.sh
+  cd ~/myprojects
+  # Reload Bash profile first to have access to bin scipts.
+  . ~/.bashrc
+  github-clone-my-repos.sh
 }
 
 info "Installing dotfiles"
