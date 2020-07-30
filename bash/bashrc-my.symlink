@@ -54,10 +54,6 @@ export NVM_DIR=~/.nvm
 # PyCharm
 export PATH=~/programs/pycharm-community/bin/:$PATH
 
-# Ruby
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-. ~/.rvm/scripts/rvm
-
 # Scala
 export PATH=~/programs/sbt/bin:$PATH
 
