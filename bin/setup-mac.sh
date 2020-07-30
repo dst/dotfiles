@@ -34,6 +34,7 @@ install bash-completion coreutils fdupes readline rename tree watch
 installCask skype slack thunderbird
 
 # Database
+install libpq # psql, pg_dump and other client utilities without installing Postgres
 install mongodb
 installCask pgadmin4 db-browser-for-sqlite
 
