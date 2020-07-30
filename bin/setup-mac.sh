@@ -135,5 +135,7 @@ installCask vlc
 # Virualization
 installCask virtualbox
 install docker docker-machine docker-compose
+installCask docker-toolbox # Depends on virtualbox
+
 
 installFromWeb Xcode Monosnap
