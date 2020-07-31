@@ -110,7 +110,7 @@ installCask alfred magicprefs shiftit spectacle
 installCask qt-creator
 
 # SCM (Git, etc.)
-brew install bash-git-prompt
+brew install bash-git-prompt git-gui
 
 # Security
 install gpg
