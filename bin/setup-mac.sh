@@ -133,6 +133,10 @@ install youtube-dl
 installCask vlc
 
 # Virualization
+# If there is a problem with virtualbox installation:
+# https://apple.stackexchange.com/questions/372492/virtualbox-installation-failed-on-macos-catalina
+# System Preferences > Security & Privacy -> General
+# The approval UI is only present in the Security & Privacy preferences pane for 30 minutes after the alert.
 installCask virtualbox
 install docker docker-machine docker-compose
 installCask docker-toolbox # Depends on virtualbox
