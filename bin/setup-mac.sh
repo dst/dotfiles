@@ -139,7 +139,8 @@ installCask vlc
 # The approval UI is only present in the Security & Privacy preferences pane for 30 minutes after the alert.
 installCask virtualbox
 install docker docker-machine docker-compose
-installCask docker-toolbox # Depends on virtualbox
+installCask docker docker-toolbox # Depends on virtualbox
 
 
 installFromWeb Xcode Monosnap
+echo "Run Docker app and accept privileged access"
