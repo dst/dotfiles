@@ -5,7 +5,7 @@
 # Dariusz Stefanski
 # 22 Dec 2016
 
-SCREENSHOTS_DIR="~/Screenshots"
+SCREENSHOTS_DIR=~/Screenshots
 
 echo "Settings the screen shots location to $SCREENSHOTS_DIR"
 mkdir $SCREENSHOTS_DIR
